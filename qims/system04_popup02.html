@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>system04_popup02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:700px;}
+    </style>
+</head>
+<body>
+    <div id="pw" class="syt04_02">
+		<div class="top">관리자 공지사항 등록</div>
+		<div class="pw_div">
+			<table class="tb01">
+				<tr>
+					<th style="width:15%;">제목 <span class="color">*</span></th>
+					<td><input type="text" value="" style="width:90%;"></td>
+				</tr>
+				<tr>
+					<th>내용 <span class="color">*</span></th>
+					<td><div class="imgbox">에디터 영역</div></td>
+				</tr>
+				<tr>
+					<th>노출 여부 <span class="color">*</span></th>
+					<td>
+				   		<ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>미노출
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1" checked="">
+									<span></span>노출
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<ul class="pop_btn clear">
+				<li><a href="#" onclick="self.close()">취소</a></li>
+				<li><a href="#" onclick="self.close()">등록</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

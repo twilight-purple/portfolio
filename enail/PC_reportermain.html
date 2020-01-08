@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-내일신문</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/select_box.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select_box.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gnb01.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb-menu > li").eq(2).addClass("on");
+        });
+    </script>
+</head>
+<body>
+
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+
+    <section>
+       
+        <div class="visual mgb-70">
+           <img class="visual-img" src="img/visual/visual_main01.jpg">
+            <div class="visual-txt txtc02">
+                <h2 class="font-45 mgb-30">내일신문 기자채널</h2>
+                <h4 class="font-22">
+                    신문에 실리지 않는 사건의 이면, 지면 제약에서 벗어난<br>
+                    심층 분석 기사를 e내일신문을 통해 선보입니다.
+                </h4>
+            </div>
+        </div>
+         
+    <ul class="main-tab-btn clear mgb-70">
+        <li class="main-tab-btn01 clear onn">
+            <div class="main-tab-btn01-span clear mgr-20">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="font-16">기자리스트</p>
+            <div class="main-tab-btn-line mtbl01">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        <li class="mg-20"><img src="img/icon/tab-menu-line.jpg"></li>
+        <li class="main-tab-btn02 clear">
+           <div class="main-tab-btn02-span clear mgr-20">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="font-16">리포트리스트</p>
+            <div class="main-tab-btn-line mtbl02">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="main-tab-view mgb-100">
+        <ul class="main-tab-wrap clear">
+            <li class="main-tab01">
+
+                <ul class="mtm01 clear main-tab-menu font-16 mgb-50">
+                    <li class="on" data-filter=".none"><span>전체</span></li>
+                    <li data-filter=".a"><span>정치</span></li>
+                    <li data-filter=".b"><span>행정</span></li>
+                    <li data-filter=".c"><span>외통</span></li>
+                    <li data-filter=".d"><span>금융</span></li>
+                    <li data-filter=".e"><span>산업</span></li>
+                    <li data-filter=".f"><span>정책</span></li>
+                    <li data-filter=".g"><span>기타</span></li>
+                </ul>
+                
+                <div class="main-tab-all-cont mgb-50 clear">
+                    <ul class="main-tab-all-txt-wrap">
+                        <li></li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>정치부</b>
+                            </div>
+                            <div>
+                                무분별한 증면 경쟁도, 발행부수 늘리기 경쟁도 하지 않을 것입니다.<br>
+                                속보 경쟁도 자제할 것입니다.<br>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>행정부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>외통부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>금융부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>산업부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>정책부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                내일신문<br>
+                                <b>기타부</b>
+                            </div>
+                            <div>
+                                충분한 정보와 전망이 돋보이는 심층 기사로 차별화를 꾀하고자 합니다.<br>
+                                각계각층에서 수천수만 명의 휴먼네트워크를 구축하고,<br>
+                                그들이 생산하는 품위 있는 고급정보와 생생한 주장을 대변할 것 입니다.<br>
+                                '국민에게 봉사하는 종합 정보 서비스 회사'가 되기 위해 항상 노력하겠습니다.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <ul class="main-tab-cont01-first">
+                    <li class="on">
+                        <div>내일신문 <b>정치부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>행정부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>외통부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>금융부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>산업부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>정책부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>내일신문 <b>기타부</b></div>
+                        <ul class="clear">
+                            <li>
+                                <a href="#">
+                                    <img src="img/people/main-people01.jpg">
+                                    <p><span>홍길동</span> 기자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="main-tab-cont01 clear">
+                    <li class="all b d f">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <p><span>홍길동</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all c d g">
+                       <a href="#">
+                            <img src="img/people/main-people02.jpg">
+                            <p><span>정재철</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all b e f">
+                        <a href="#">
+                            <img src="img/people/main-people03.jpg">
+                            <p><span>김영희</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all b e g">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <p><span>홍길동</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all f d">
+                       <a href="#">
+                            <img src="img/people/main-people02.jpg">
+                            <p><span>정재철</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all d c">
+                        <a href="#">
+                            <img src="img/people/main-people03.jpg">
+                            <p><span>김영희</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all b a f">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <p><span>홍길동</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all e c g">
+                       <a href="#">
+                            <img src="img/people/main-people02.jpg">
+                            <p><span>정재철</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all g a">
+                        <a href="#">
+                            <img src="img/people/main-people03.jpg">
+                            <p><span>김영희</span> 기자</p>
+                        </a>
+                    </li>
+                    <li class="all a c">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <p><span>홍길동</span> 기자</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="main-tab02">
+               
+                <ul class="mtm02 clear main-tab-menu font-16 mgb-50">
+                    <li class="on" data-filter="*"><span>전체</span></li>
+                    <li data-filter=".a"><span>정치</span></li>
+                    <li data-filter=".b"><span>행정</span></li>
+                    <li data-filter=".c"><span>외통</span></li>
+                    <li data-filter=".d"><span>금융</span></li>
+                    <li data-filter=".e"><span>산업</span></li>
+                    <li data-filter=".f"><span>정책</span></li>
+                    <li data-filter=".g"><span>기타</span></li>
+                </ul>
+                
+<!--                swipe slide-->
+                <div class="mts-overflow mgb-30">
+                <ul class="main-tab02-slide">
+                    <li>
+                        <div class="swiper-container s1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        전체-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        전체-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        전체-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정치-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정치-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정치-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        행정-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        행정-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        행정-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        외통-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        외통-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        외통-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        금융-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        금융-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        금융-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s6">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        산업-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        산업-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        산업-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s7">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정책-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정책-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        정책-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swiper-container s8">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        기타-1
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        기타-2
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clear">
+                                    <div>
+                                        <h3>호날두,탈세 혐의로 지역 2년 벌금 240억... 집행유예로 감옥은 피해</h3>
+                                        <p>
+                                        기타-3
+                                        </p>
+                                        <p>2018-06-12 04:00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/people/main-people01.jpg">
+                                        <p>홍길동 기자</p>
+                                        <a href="#">기자페이지 가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nm-wrap">
+                                <div class="swiper-pagination"></div>
+                                <div class="line-back"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+<!--                swipe slide-->
+                
+                <ul class="main-tab02-cont clear mgb-30">
+                    <li class="all a">
+                        <a class="mt02c" href="#">
+                            <h3>문 대통령, 현직 처음 사전투표, 여야 지도부도 '한 표 행사'</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                문재인 대통령과 여야 지도부가 8일부터 이틀간 전국에서 진행되는 6.13지방선거 및 국회의원재·보궐선거 사전투표에 참여해 1표를 행사했다 
+                                이따라 자유한국당에서도 참가의사를 표명했으며
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all a">
+                        <a class="mt02c" href="#">
+                            <h3>사전투표는 승부 감별사?</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                선거일 5~6일전에 실시하는 사전투표가 여당의 압승이냐, 야당의 반전이냐를 가늠할 수 있는 감별사가 될 전망이다. 더불어미주당은 젊은층의
+                                투표율을 높이기 위해, 한국당은 기존의
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all b">
+                        <a class="mt02c" href="#">
+                            <h3>홍준표, 나흘 만에 지원 유세 재개</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                홍준표 자유한국당 대표가 지방선거 지원유세 중단을 선언(3일)한 지 나흘 만에 유세재개를 선언했다. 
+                                자신의 빈 자리를 채우며 지원유세에 나서고 있는 중진 의원들과 함께 앞으로의 계획을
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all f">
+                        <a class="mt02c" href="#">
+                            <h3>문 대통령, 현직 처음 사전투표, 여야 지도부도 '한 표 행사'</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                문재인 대통령과 여야 지도부가 8일부터 이틀간 전국에서 진행되는 6.13지방선거 및 국회의원재·보궐선거 사전투표에 참여해 1표를 행사했다 
+                                이따라 자유한국당에서도 참가의사를 표명했으며
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all g">
+                        <a class="mt02c" href="#">
+                            <h3>사전투표는 승부 감별사?</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                선거일 5~6일전에 실시하는 사전투표가 여당의 압승이냐, 야당의 반전이냐를 가늠할 수 있는 감별사가 될 전망이다.
+                                더불어민주당은 젊은층의 투표율을 높이기 위해, 한국당은 기존의
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all c">
+                        <a class="mt02c" href="#">
+                            <h3>홍준표, 나흘 만에 지원 유세 재개</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                홍준표 자유한국당 대표가 지방선거 지원유세 중단을 선언(3일)한 지 나흘 만에 유세재개를 선언했다. 
+                                자신의 빈 자리를 채우며 지원유세에 나서고 있는 중진 의원들과 함께 앞으로의 계획을
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all d">
+                        <a class="mt02c" href="#">
+                            <h3>문 대통령, 현직 처음 사전투표, 여야 지도부도 '한 표 행사'</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                문재인 대통령과 여야 지도부가 8일부터 이틀간 전국에서 진행되는 6.13지방선거 및 국회의원재·보궐선거 사전투표에 참여해 1표를 행사했다 
+                                이따라 자유한국당에서도 참가의사를 표명했으며
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all a">
+                        <a class="mt02c" href="#">
+                            <h3>사전투표는 승부 감별사?</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                선거일 5~6일전에 실시하는 사전투표가 여당의 압승이냐, 야당의 반전이냐를 가늠할 수 있는 감별사가 될 전망이다.
+                                더불어민주당은 젊은층의 투표율을 높이기 위해, 한국당은 기존의
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                    <li class="all e">
+                        <a class="mt02c" href="#">
+                            <h3>홍준표, 나흘 만에 지원 유세 재개</h3>
+                            <p>2018-06-12 04:00</p>
+                            <p>
+                                홍준표 자유한국당 대표가 지방선거 지원유세 중단을 선언(3일)한 지 나흘 만에 유세재개를 선언했다. 
+                                자신의 빈 자리를 채우며 지원유세에 나서고 있는 중진 의원들과 함께 앞으로의 계획을
+                            </p>
+                            <p>정치부 홍길동 기자</p>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="main-tab02-cont-more">
+                    <ul class="clear mt02cm">
+                        <li class="font-20 mt02ctxtt">더보기</li>
+                        <li class="mt02cm01 font-14">1</li>
+                        <li>/</li>
+                        <li class="mt02cm02 font-14">10</li>
+                        <li class="mt02cm-radio"><img src="img/icon/mt02cm-radio.jpg"></li>
+                    </ul>
+                    <div class="more-loding">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        로딩중입니다.
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    </section>
+
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>

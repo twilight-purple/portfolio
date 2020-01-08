@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>operation01_popup02</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/operation.js"></script>
+	<style>
+		#pw{width:1200px;}
+		.pw_div{overflow: auto; height: 745px;}
+	</style>
+</head>
+<body>
+	<div id="pw" class="op_answer">
+		<div class="top">문의 답변관리/등록</div>
+		<div class="pw_div">
+			<h4>답변관리 <input type="button" value="화면 가이드" style="width:120px; float: right;" class="btn03 op_wgd"></h4>
+<!----------------------------검색영역-->
+		   <table class="sc">
+			   <tr>
+				   <th>문의구분</th>
+				   <td style="width:15%;">
+					   <select id="qu_sl">
+						   <option>전체</option>
+						   <option>앱</option>
+						   <option>카페</option>
+					   </select>
+				   </td>
+				   <th>문의유형</th>
+				   <td class="qu" style="width:155px;">
+					   <ul class="on fst">
+						   <li>전체</li>
+					   </ul>
+					   <ul>
+						   <li>전체</li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb all04" value="">
+								 <span></span>
+								 <p>전체</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>회원</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>스토어</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>서비스</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>주문/결제</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>취소/반품</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>배송</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>포인트</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>기타</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>비밀의공구</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이벤트/광고문의</p>
+							   </label>
+						   </li>
+						   <li>
+							   <div class="btn03">선택완료</div>
+						   </li>
+					   </ul>
+					   <ul>
+						   <li>전체</li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb all04" value="">
+								 <span></span>
+								 <p>전체</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>등급관련</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이용제한</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>운영정책위반</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>사기신고</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이벤트/광고문의</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>기타</p>
+							   </label>
+						   </li>
+						   <li>
+							   <div class="btn03">선택완료</div>
+						   </li>
+					   </ul>
+				   </td>
+				   <th>답변내용</th>
+				   <td>
+				   	<input type="text" value="">
+				   	<input type="button" value="검색">
+				   </td>
+			   </tr>
+		   </table>
+<!----------------------------리스트영역-->
+		   <ul class="list_top clear">
+				   <li>총 120건,</li>
+				   <li class="clear'">
+					   <ul class="list_nm">
+						   <li class="on">1</li>
+					   </ul>
+					   <p>/ 6 페이지</p>
+				   </li>
+				   <li>
+					   <select>
+						   <option>20개씩</option>
+						   <option>40개씩</option>
+						   <option>60개씩</option>
+						   <option>80개씩</option>
+						   <option>100개씩</option>
+					   </select>
+				   </li>
+				   <li class="list_topbtn clear">
+					   <a href="#" class="btn01" style="width:100px;">삭제적용</a>
+				   </li>
+			   </ul>
+			   <ul class="list_view clear">
+				   <li class="on">
+					   <table class="list">
+						   <tr>
+							   <th>
+								<label class="cb li">
+									 <input type="checkbox" class="sc_cb all" value="">
+									 <span></span>
+								</label>
+							   </th>
+							   <th>NO.</th>
+							   <th>문의구분</th>
+							   <th>문의유형</th>
+							   <th>문의케이스</th>
+							   <th>답변내용</th>
+							   <th>첨부이미지</th>
+							   <th>등록자</th>
+							   <th>수정자</th>
+							   <th class="img">사용횟수<img src="img/down02.png"></th>
+						   </tr>
+						   <tr>
+							   <td>
+								<label class="cb li">
+									 <input type="checkbox" class="sc_cb" value="">
+									 <span></span>
+								</label>
+							   </td>
+							   <td>120</td>
+							   <td>카페</td>
+							   <td>회원</td>
+							   <td>입력된 문의케이스 노출</td>
+							   <td>입력된 답변내용 노출</td>
+							   <td class="a color">Y</td>
+							   <td>김보배(서비스기획팀)</td>
+							   <td>한석문(서비스기획팀)</td>
+							   <td>50</td>
+						   </tr>
+						   <tr>
+							   <td>
+								<label class="cb li">
+									 <input type="checkbox" class="sc_cb" value="">
+									 <span></span>
+								</label>
+							   </td>
+							   <td>120</td>
+							   <td>카페</td>
+							   <td>회원</td>
+							   <td>입력된 문의케이스 노출</td>
+							   <td>입력된 답변내용 노출</td>
+							   <td class="a color">Y</td>
+							   <td>김보배(서비스기획팀)</td>
+							   <td>한석문(서비스기획팀)</td>
+							   <td>50</td>
+						   </tr>
+						   <tr>
+							   <td>
+								<label class="cb li">
+									 <input type="checkbox" class="sc_cb" value="">
+									 <span></span>
+								</label>
+							   </td>
+							   <td>120</td>
+							   <td>카페</td>
+							   <td>회원</td>
+							   <td>입력된 문의케이스 노출</td>
+							   <td>입력된 답변내용 노출</td>
+							   <td>N</td>
+							   <td>김보배(서비스기획팀)</td>
+							   <td>한석문(서비스기획팀)</td>
+							   <td>-</td>
+						   </tr>
+						   <tr>
+							   <td>
+								<label class="cb li">
+									 <input type="checkbox" class="sc_cb" value="">
+									 <span></span>
+								</label>
+							   </td>
+							   <td>120</td>
+							   <td>카페</td>
+							   <td>회원</td>
+							   <td>입력된 문의케이스 노출</td>
+							   <td>입력된 답변내용 노출</td>
+							   <td class="a color">Y</td>
+							   <td>김보배(서비스기획팀)</td>
+							   <td>한석문(서비스기획팀)</td>
+							   <td>50</td>
+						   </tr>
+					   </table>
+				   </li>
+				</ul>
+			   <div class="btn_wrap clear">
+				   <ul class="btn_left clear">
+					   <li><img src="img/back02.png"></li>
+					   <li><img src="img/back.png"></li>
+				   </ul>
+				   <ul class="btn clear">
+					   <li class="on">1</li>
+				   </ul>
+				   <ul class="btn_right clear">
+					   <li><img src="img/next.png"></li>
+					   <li><img src="img/next02.png"></li>
+				   </ul>
+			   </div>
+<!----------------------------표2 영역-->
+			<h4>답변 작성/수정 <input type="button" value="작성 초기화" style="width:100px; float: right;" class="btn03"></h4>
+			<table class="tb01" style="margin-top:10px;">
+				<tr>
+					<th>문의구분</th>
+				   <td style="width:15%;">
+					   <select id="qu02_sl">
+						   <option>전체</option>
+						   <option>앱</option>
+						   <option>카페</option>
+					   </select>
+				   </td>
+				   <th>문의유형</th>
+				   <td class="qu02" style="width:155px;">
+					   <ul class="on fst">
+						   <li>전체</li>
+					   </ul>
+					   <ul>
+						   <li>전체</li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb all04" value="">
+								 <span></span>
+								 <p>전체</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>회원</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>스토어</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>서비스</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>주문/결제</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>취소/반품</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>배송</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>포인트</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>기타</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>비밀의공구</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이벤트/광고문의</p>
+							   </label>
+						   </li>
+						   <li>
+							   <div class="btn03">선택완료</div>
+						   </li>
+					   </ul>
+					   <ul>
+						   <li>전체</li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb all04" value="">
+								 <span></span>
+								 <p>전체</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>등급관련</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이용제한</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>운영정책위반</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>사기신고</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>이벤트/광고문의</p>
+							   </label>
+						   </li>
+						   <li>
+							   <label class="cb">
+								 <input type="checkbox" class="sc_cb" value="">
+								 <span></span>
+								 <p>기타</p>
+							   </label>
+						   </li>
+						   <li>
+							   <div class="btn03">선택완료</div>
+						   </li>
+					   </ul>
+				   </td>
+					<th>문의케이스</th>
+					<td><input type="text" value="" style="width:280px;"></td>
+				</tr>
+			</table>
+			<table class="tb01 v02">
+			   <tr>
+				   <th>첨부이미지</th>
+				   <td class="imgbox_wrap">
+				   		<div class="file_wrap">
+							<div class="upload-btn_wrap">
+								<button type="button" title="찾아보기버튼">
+									<span>첨부하기</span>
+								</button>
+								<input type="file" class="input_file" title="파일찾기" multiple="">
+							</div>
+							<ul class="imgbox_ftxt">
+								<li>
+									<a href="#">
+										<input type="text" class="upload_text" title="파일명" readonly="readonly">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<input type="text" class="upload_text" title="파일명" readonly="readonly">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<input type="text" class="upload_text" title="파일명" readonly="readonly">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<input type="text" class="upload_text" title="파일명" readonly="readonly">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<input type="text" class="upload_text" title="파일명" readonly="readonly">
+									</a>
+								</li>
+							</ul>
+				   		</div>
+					    <div class="imgbox02">
+							<ul class="clear">
+								<li style="line-height: 70px;">
+									<p>img</p>
+									<div class="ibtn btn01" style="top:55%;">삭제</div>
+								</li>
+								<li style="line-height: 70px;">
+									<p>img</p>
+									<div class="ibtn btn01" style="top:55%;">삭제</div>
+								</li>
+								<li style="line-height: 70px;">
+									<p>img</p>
+									<div class="ibtn btn01" style="top:55%;">삭제</div>
+								</li>
+								<li style="line-height: 70px;">
+									<p>img</p>
+									<div class="ibtn btn01" style="top:55%;">삭제</div>
+								</li>
+								<li style="line-height: 70px;">
+									<p>img</p>
+									<div class="ibtn btn01" style="top:55%;">삭제</div>
+								</li>
+							</ul>
+					    </div>
+					   <input type="button" value="이미지추가 +" class="btn03 img_more">
+				   </td>
+			   </tr>
+			    <tr>
+					<th>답변내용</th>
+					<td class="textarea_wp clear">
+				   		<textarea name="list02_txt" value=" " placeholder="" maxlength="200" style="width:85%"></textarea>
+						<ul>
+							<li class="btn03">답변수정</li>
+							<li class="btn03">답변추가</li>
+						</ul>
+				   </td>
+			    </tr>
+			</table>
+		</div>
+		<ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">닫기</a></li>
+			<li><a href="#" onclick="self.close()">답변등록</a></li>
+		</ul>
+	</div>
+</body>
+</html>

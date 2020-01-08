@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>system04_popup01</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:700px;}
+    </style>
+</head>
+<body>
+    <div id="pw" class="syt04_01">
+		<div class="top">관리자 공지사항 상세</div>
+		<div class="pw_div">
+			<table class="sc">
+				<tr>
+					<th colspan="2">
+						<input type="text" value="1월 앱 업데이트 공지" style="width:54%;">
+						<span>등록자:허길행(서비스기획팀)&nbsp;&nbsp;&nbsp;등록일:YYYY-MM-DD</span>
+					</th>
+				</tr>
+				<tr>
+					<td colspan="2">에디터 영역</td>
+				</tr>
+				<tr>
+					<th>노출 여부</th>
+					<td>
+				   		<ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>미노출
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1" checked="">
+									<span></span>노출
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<ul class="pop_btn clear">
+				<li><a href="#" onclick="self.close()">취소</a></li>
+				<li><a href="#" onclick="self.close()">수정</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>service10_popup</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#pw{width: 1100px;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/service.js"></script>
+</head>
+<body>
+	<div id="pw" class="sv_10">
+		<div class="top">포인트 상세</div>
+		<div class="pw_div">
+			<table class="tb02">
+				<tr>
+					<th>닉네임(이름)</th>
+					<th>핸드폰번호</th>
+					<th>보유포인트</th>
+					<th>이번 달 소멸예정 포인트</th>
+				</tr>
+				<tr>
+					<td class="a color">미밍(민소연)</td>
+					<td class="a color">010-1234-5496</td>
+					<td>1,250P</td>
+					<td>50P</td>
+				</tr>
+			</table>
+			<table class="sc">
+				<tr>
+					<th>적립/차감일</th>
+					<td class="cd_img clear" style="width:27%;">
+					   <input type="text" name="sc_txt" value="" class="sc_cd01">
+					   <input type="button" name="sc_btn" value="" class="datepicker n01">
+					   ~
+					   <input type="text" name="sc_txt" value="" class="sc_cd02">
+					   <input type="button" name="sc_btn" value="" class="datepicker n02">
+				   </td>
+					<th>처리타입</th>
+					<td>
+						<select>
+							<option>전체</option>
+							<option>적립</option>
+							<option>사용</option>
+							<option>차감</option>
+							<option>소멸</option>
+						</select>
+					</td>
+					<th>사유</th>
+					<td>
+						<input type="text" value="" placeholder="사유를 입력해 주세요" style="width:250px;">
+						<input type="button" value="검색">
+					</td>
+				</tr>
+			</table>
+		   <ul class="list_top clear">
+			   <li>총 90건,</li>
+			   <li class="clear'">
+				   <ul class="list_nm">
+					   <li class="on">1</li>
+				   </ul>
+				   <p>/ 5 페이지</p>
+			   </li>
+			   <li><span>(YYYY-MM-DD ~ YYYY-MM-DD)</span></li>
+			   <li>
+				   <select>
+					   <option>20개씩</option>
+					   <option>40개씩</option>
+					   <option>60개씩</option>
+					   <option>80개씩</option>
+					   <option>100개씩</option>
+				   </select>
+			   </li>
+			   <li class="list_topbtn clear">
+				   <a href="#" class="btn01 pot" style="width:110px;">포인트 차감</a>
+				   <a href="#" class="btn01 pot02" style="width:110px;">포인트 지급</a>
+			   </li>
+		   </ul>
+		   <ul class="list_view clear">
+			   <li class="on">
+				   <table class="list">
+					   <tr>
+						   <th>NO.</th>
+						   <th>처리타입</th>
+						   <th class="img">포인트금액<img src="img/down02.png"></th>
+						   <th>사유</th>
+						   <th class="img">적립/차감일<img src="img/down02.png"></th>
+						   <th>처리자</th>
+						   <th>비고</th>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td>적립</td>
+						   <td>1,000P</td>
+						   <td>팔로워 달성 축하 포인트</td>
+						   <td>2016-12-25 00:23:56</td>
+						   <td>자동</td>
+						   <td>-</td>
+					   </tr>
+					   <tr>
+						   <td>89</td>
+						   <td>적립</td>
+						   <td>10P</td>
+						   <td>깜짝선물</td>
+						   <td>2016-12-25 00:23:56</td>
+						   <td>민소연(서비스기획팀)</td>
+						   <td>문의로 다이디어 제출함</td>
+					   </tr>
+					   <tr>
+						   <td>88</td>
+						   <td>차감</td>
+						   <td>100P</td>
+						   <td>유효기간만료</td>
+						   <td>2016-12-25 00:23:56</td>
+						   <td>자동</td>
+						   <td>-</td>
+					   </tr>
+				   </table>
+					<h4>포인트 관련 참고사항<input type="button" value="수정 적용" style="width:90px; float: right; margin-top:-5px;" class="btn03"></h4>
+					<div class="textarea_wp">
+						<textarea value=" " placeholder="">-포인트 수동 차감시 회원님에게 전화할 것 임의로 차감 절대금지&#10;-적립된 포인트 월 기준으로 4개월 이후 다음달 차감&#10; ex) 1월 1일 적립시 &#62; 7월 말일 차감 ex)1월 31일 적립 시 &#62; 7월 말일 차감 (차감 시점은 다음달 1일로 넘어감)</textarea>
+				   </div>
+			   </li>
+			</ul>
+		   <div class="btn_wrap clear">
+			   <ul class="btn_left clear">
+				   <li><img src="img/back02.png"></li>
+				   <li><img src="img/back.png"></li>
+			   </ul>
+			   <ul class="btn clear">
+				   <li class="on">1</li>
+			   </ul>
+			   <ul class="btn_right clear">
+				   <li><img src="img/next.png"></li>
+				   <li><img src="img/next02.png"></li>
+			   </ul>
+		   </div>
+		</div>
+		<ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li><a href="#" onclick="self.close()">확인</a></li>
+		</ul>
+	</div>
+</body>
+</html>

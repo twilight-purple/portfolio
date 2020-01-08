@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qudillion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/cusom.js"></script>
+</head>
+<body>
+    <div id="wrap">
+       
+<!--       배경시작-->
+        <div class="wrap_top"></div>
+        <div class="wrap_bottom"></div>
+<!--        배경완료-->
+       
+<!--       로고/로그인/경고text 시작-->
+        <div class="text_wrap">
+            <h1><img src="img/logo.png" width="240"></h1>
+            <h2>통합관리자 시스템</h2>
+            <div class="box clear">
+                <div class="box_left">
+                    <input class="id" type="text" name="id" value="" placeholder="아이디를 입력해 주세요">
+                    <input class="password" type="password" name="password" value="" placeholder="비밀번호를 입력해 주세요">
+                </div>
+                <div class="login"><a href="#">로그인</a></div>
+            </div>
+<!--            비밀번호 에러 txt시작-->
+            <p class="error">등록되지 않은 정보입니다. 다시 확인해주세요.</p>
+<!--            비밀번호 에러 txt끝-->
+        </div>
+<!--        로고/로그인/경고text 끝-->
+       
+<!--       카피라이트 시작-->
+        <p class="copyright">
+            Copyright ⓒ qdillion. all right reserved
+        </p>
+<!--        카피라이트 완료-->
+       
+<!--       비밀번호 변경 팝업창 시작-->
+        <div class="change">
+            3개월 동안 동일한 비밀번호를 사용하고 있습니다.<br>
+            개인정보 보호를 위해 비밀번호를 변경해주세요.
+            <input class="password_change01" type="password" name="password"  value="" placeholder="현재 비밀번호">
+            <input class="password_change02" type="password" name="password"  value="" placeholder="신규 비밀번호">
+            <input class="password_change03" type="password" name="password"  value="" placeholder="신규 비밀번호 확인">
+            <ul class="btn clear">
+                <li><a href="#">90일 뒤에 변경하기</a></li>
+                <li><a href="#">비밀번호 변경하기</a></li>
+            </ul>
+        </div>
+<!--        비밀번호 변경 팝업창 끝-->
+
+    </div>
+</body>
+</html>

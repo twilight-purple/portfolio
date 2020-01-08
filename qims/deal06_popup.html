@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deal06_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:450px; height: 465px;}
+    </style>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/deal.js"></script>
+</head>
+<body>
+    <div id="pw" class="dl06">
+		<div class="top">편의점 택배 안내 콘텐츠 등록</div>
+		<ul class="pt01 clear">
+			<li>운영체제</li>
+			<li>
+				<ul class="clear">
+					<li>
+						<label class="rdb">
+							<input type="radio" name="rd1" checked="">
+							<span></span>전체
+						</label>
+					</li>
+					<li>
+						<label class="rdb">
+							<input type="radio" name="rd1">
+							<span></span>안드로이드
+						</label>
+					</li>
+					<li>
+						<label class="rdb">
+							<input type="radio" name="rd1">
+							<span></span>iOS
+						</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="pt02">
+			<div class="clear">
+				<div class="upload-btn_wrap">
+					<button type="button" title="찾아보기버튼">
+						<span>첨부하기</span>
+					</button>
+					<input type="file" class="input_file" title="파일찾기">
+				</div>
+				<input type="text" class="upload_text" title="파일명" readonly="readonly">
+			</div>
+		</div>
+		<ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li class="d_y"><a href="#" onclick="return false">등록</a></li>
+		</ul>
+    </div>
+</body>
+</html>

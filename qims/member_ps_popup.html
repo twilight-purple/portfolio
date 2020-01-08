@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>member_ps_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:1000px;}
+    </style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/member.js"></script>
+</head>
+<body>
+    <div id="pw" class="mb_ps">
+		<div class="top">택배서비스 이용 이력</div>
+		<div class="pw_div">
+		   <table class="sc">
+			   <tr>
+				   <th>처리상태</th>
+				   <td>
+					   <select>
+						   <option>전체</option>
+						   <option>예약중</option>
+						   <option>예약취소</option>
+						   <option>접수완료</option>
+						   <option>배송중</option>
+						   <option>배송완료</option>
+					   </select>
+				   </td>
+				   <th>예약번호</th>
+				   <td><input type="text" name="pop_txt" value=""></td>
+				   <th>운송장 번호</th>
+				   <td>
+					   <input type="text" name="pop_txt" value="">
+					   <input type="button" name="sc_btn" value="검색">
+				   </td>
+			   </tr>
+		   </table>
+		   <ul class="list_top clear">
+			   <li>전체 120건,</li>
+			   <li class="clear'">
+				   <ul class="list_nm">
+					   <li class="on">1</li>
+				   </ul>
+				   <p>/ 10 페이지</p>
+			   </li>
+			   <li><span>(2018-01-01 ~ 2018-01-31)</span></li>
+			   <li>
+				   <select>
+					   <option>50개씩</option>
+					   <option>100개씩</option>
+					   <option>150개씩</option>
+					   <option>200개씩</option>
+					   <option>250개씩</option>
+				   </select>
+			   </li>
+		   </ul>
+		   <ul class="list_view clear">
+			   <li class="on">
+				   <table class="list">
+					   <tr>
+						   <th>NO.</th>
+						   <th class="img">택배신청번호<img src="img/down02.png"></th>
+						   <th>구매자</th>
+						   <th>예약번호</th>
+						   <th>운송장번호</th>
+						   <th>처리상태</th>
+						   <th>예약일</th>
+						   <th>취소일</th>
+					   </tr>
+					   <tr>
+						   <td>120</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>119</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>212154687</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>118</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>117</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>116</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>115</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>114</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>113</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>115</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>114</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>113</td>
+						   <td>1231234678</td>
+						   <td>m@joogna.com (밍소)</td>
+						   <td>903355830374</td>
+						   <td>-</td>
+						   <td>예약중</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+						   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+				   </table>
+			   </li>
+			</ul>
+		   <div class="btn_wrap clear" style="margin-top:15px;">
+			   <ul class="btn_left clear">
+				   <li><img src="img/back02.png"></li>
+				   <li><img src="img/back.png"></li>
+			   </ul>
+			   <ul class="btn clear">
+				   <li class="on">1</li>
+			   </ul>
+			   <ul class="btn_right clear">
+				   <li><img src="img/next.png"></li>
+				   <li><img src="img/next02.png"></li>
+			   </ul>
+		   </div>
+		</div>
+		<div class="pop_btn02">
+			<a href="#" onclick="self.close()">닫기</a>
+		</div>
+    </div>
+</body>
+</html>

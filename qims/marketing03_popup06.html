@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>marketing_popup06</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#pw{width: 1000px;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+</head>
+<body>
+	<div id="pw" class="mk_p04 v02">
+		<div class="top">기획전 선택</div>
+		<div class="pw_div">
+		   <h3>기획전 <span class="color">* 기획전 선택은 스토어당 1건만 선택 가능하며, 소재등록 시 설정한 스토어와 일치해야 설정할 수 있습니다.</span></h3>
+		   <table class="sc">
+			   <tr>
+				   <th>등록일</th>
+				   <td class="cd_img clear" colspan="2">
+					   <input type="text" name="sc_txt" value="" class="sc_cd01">
+					   <input type="button" name="sc_btn" value="" class="datepicker n01">
+					   ~
+					   <input type="text" name="sc_txt" value="" class="sc_cd02">
+					   <input type="button" name="sc_btn" value="" class="datepicker n02">
+				   </td>
+				   <th style="width:9%;">기획전상태</th>
+				   <td>
+					   <select>
+						   <option>전체</option>
+						   <option>on</option>
+						   <option>off</option>
+					   </select>
+				   </td>
+				   <th style="width:9%;">기획전명</th>
+				   <td><input type="text" value=""></td>
+			   </tr>
+			   <tr>
+				   <th>아이디</th>
+				   <td><input type="text" value=""></td>
+				   <th>닉네임</th>
+				   <td colspan="2">
+				   	<input type="text" value="">
+				   	<label class="cb">
+						 <input type="checkbox" class="sc_cb" value="">
+						 <span></span>
+						 <p>이전 닉네임 포함</p>
+					   </label>
+				   </td>
+				   <th>휴대폰번호</th>
+				   <td>
+				   		<input type="text" value="">
+					   <input type="button" value="검색">
+				   </td>
+			   </tr>
+		   </table>
+		   <ul class="list_top clear" style="margin-top:30px;">
+			   <li>총 11,200,121건,</li>
+			   <li class="clear'">
+				   <ul class="list_nm">
+					   <li class="on">1</li>
+				   </ul>
+				   <p>/ 112,001 페이지</p>
+			   </li>
+			   <li><span>(YYYY-MM-DD ~ YYYY-MM-DD)</span></li>
+			   <li>
+				   <select>
+					   <option>100개씩</option>
+					   <option>200개씩</option>
+					   <option>300개씩</option>
+					   <option>400개씩</option>
+					   <option>500개씩</option>
+				   </select>
+			   </li>
+		   </ul>
+		   <ul class="list_view clear">
+			   <li class="on">
+				   <table class="list">
+					   <tr>
+						   <th>선택</th>
+						   <th>NO.</th>
+						   <th>기획전상태</th>
+						   <th>기획전명</th>
+						   <th>아이디(이메일)</th>
+						   <th>닉네임</th>
+						   <th>휴대폰번호</th>
+						   <th class="img">등록일<img src="img/down02.png"></th>
+					   </tr>
+					   <tr>
+						   <td>
+						   		<label class="rdb">
+									<input type="radio" name="rd1" checked="">
+									<span></span>
+								</label>
+						   </td>
+						   <td>11200121</td>
+						   <td>On</td>
+						   <td class="a color">나이키 에어맥스 기획전</td>
+						   <td>bjy@naver.com</td>
+						   <td class="a color">나이키코리아</td>
+						   <td>010-6411-1125</td>
+						   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>
+						   		<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>
+								</label>
+						   </td>
+						   <td>11200121</td>
+						   <td>off</td>
+						   <td class="a color">나이키 에어맥스 기획전</td>
+						   <td>bjy@naver.com</td>
+						   <td class="a color">나이키코리아</td>
+						   <td>010-6411-1125</td>
+						   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>
+						   		<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>
+								</label>
+						   </td>
+						   <td>11200121</td>
+						   <td>On</td>
+						   <td class="a color">나이키 에어맥스 기획전</td>
+						   <td>bjy@naver.com</td>
+						   <td class="a color">나이키코리아</td>
+						   <td>010-6411-1125</td>
+						   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>
+						   		<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>
+								</label>
+						   </td>
+						   <td>11200121</td>
+						   <td>off</td>
+						   <td class="a color">나이키 에어맥스 기획전</td>
+						   <td>bjy@naver.com</td>
+						   <td class="a color">나이키코리아</td>
+						   <td>010-6411-1125</td>
+						   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+					   <tr>
+						   <td>
+						   		<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>
+								</label>
+						   </td>
+						   <td>11200121</td>
+						   <td>On</td>
+						   <td class="a color">나이키 에어맥스 기획전</td>
+						   <td>bjy@naver.com</td>
+						   <td class="a color">나이키코리아</td>
+						   <td>010-6411-1125</td>
+						   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   </tr>
+				   </table>
+			   </li>
+			</ul>
+		   <div class="btn_wrap clear" style="margin-top:20px;">
+			   <ul class="btn_left clear">
+				   <li><img src="img/back02.png"></li>
+				   <li><img src="img/back.png"></li>
+			   </ul>
+			   <ul class="btn clear">
+				   <li class="on">1</li>
+			   </ul>
+			   <ul class="btn_right clear">
+				   <li><img src="img/next.png"></li>
+				   <li><img src="img/next02.png"></li>
+			   </ul>
+		   </div>
+		</div>
+		<ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li><a href="#" onclick="self.close()">선택</a></li>
+		</ul>
+	</div>
+</body>
+</html>

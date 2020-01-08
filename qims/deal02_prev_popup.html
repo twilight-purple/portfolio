@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deal02_prev_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:1300px;}
+    </style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/deal.js"></script>
+</head>
+<body>
+    <div id="pw" class="dl01_01 v02">
+		<div class="top">이전거래내역</div>
+		<div class="pw_div">
+		   <ul class="list_top clear">
+			   <li>전체 10,000건,</li>
+			   <li class="clear'">
+				   <ul class="list_nm">
+					   <li class="on">1</li>
+				   </ul>
+				   <p>/ 1,000 페이지</p>
+			   </li>
+			   <li><span>(2018-07-01 ~ 2018-09-05)</span></li>
+			   <li>
+				   <select>
+					   <option>100개씩</option>
+					   <option>200개씩</option>
+					   <option>300개씩</option>
+					   <option>400개씩</option>
+					   <option>500개씩</option>
+				   </select>
+			   </li>
+		   </ul>
+		   <ul class="list_view clear">
+			   <li class="on">
+				   <table class="list">
+					<tr>
+					   <th width="2%">NO.</th>
+					   <th class="img">거래번호<img src="img/down02.png"></th>
+					   <th class="img">제휴사<br>거래번호<img src="img/down02.png"></th>
+					   <th>판매자</th>
+					   <th>구매자</th>
+					   <th>상품명</th>
+					   <th>카테고리</th>
+					   <th>결제수단</th>
+					   <th class="img">결제금액<img src="img/down02.png"></th>
+					   <th class="img">수수료<img src="img/down02.png"></th>
+					   <th>거래상태</th>
+					   <th>배송신청<br>방식</th>
+					   <th class="img">결제일<img src="img/down02.png"></th>
+					   <th class="img v02">
+							상태변경일
+							<img src="img/down02.png" style="margin-left:0px;">
+							<img src="img/down01.png" style="margin-left:0px;">
+					   </th>
+					   <th class="img">구매확정일<img src="img/down02.png"></th>
+					   <th class="img">계좌송금일<img src="img/down02.png"></th>
+					   <th class="img">취소일<img src="img/down02.png"></th>
+					   <th>취소사유</th>
+					   <th>연령</th>
+					   <th>성별</th>
+					   <th>판매지역</th>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td class="a">나이키 후드 삼줄</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>편의점 택배</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>판매자 신뢰 하락</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td class="a">나이키 후드 삼줄</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>편의점 택배</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>판매자 신뢰 하락</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+				   <tr>
+					   <td>20</td>
+					   <td>1231234678</td>
+					   <td>1231234678</td>
+					   <td class="color">k@m.com<br>(스즈땽)</td>
+					   <td>a@m.com<br>(아노찡)</td>
+					   <td class="a">뉴발 250mm미착용 새상품</td>
+					   <td>수입명품>여성<br>신발>구두</td>
+					   <td>무통장입금</td>
+					   <td>500.000</td>
+					   <td>500</td>
+					   <td>결제완료</td>
+					   <td>안전결제<br>배송등록</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>YYYY-MM-DD<br>HH:MM:SS</td>
+					   <td>-</td>
+					   <td>10대</td>
+					   <td>남</td>
+					   <td>서울시>관악구>봉천동</td>
+				   </tr>
+			   </table>
+		   </li>
+		</ul>
+	   <div class="btn_wrap clear" style="margin-top:15px;">
+		   <ul class="btn_left clear">
+			   <li><img src="img/back02.png"></li>
+			   <li><img src="img/back.png"></li>
+		   </ul>
+		   <ul class="btn clear">
+			   <li class="on">1</li>
+		   </ul>
+		   <ul class="btn_right clear">
+			   <li><img src="img/next.png"></li>
+			   <li><img src="img/next02.png"></li>
+		   </ul>
+	   </div>
+		</div>
+		<div class="pop_btn02">
+			<a href="#" onclick="self.close()">닫기</a>
+		</div>
+	</div>
+</body>
+</html>

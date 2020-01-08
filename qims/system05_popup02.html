@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>system05_popup02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:700px;}
+    </style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+</head>
+<body>
+    <div id="pw" class="syt05_01">
+		<div class="top">앱 버전 등록</div>
+		<div class="pw_div">
+			<table class="tb01">
+				<tr>
+					<th>운영체제</th>
+					<td colspan="3">
+				   		<ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1" checked="">
+									<span></span>안드로이드
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>iOS
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>버전명 <span class="color">*</span></th>
+					<td><input type="text" value=""></td>
+					<th>업데이트 설정</th>
+					<td>
+						<select>
+							<option>체크 안 함</option>
+							<option>선택</option>
+							<option>강제</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>업데이트 내용 <span class="color">*</span></th>
+					<td colspan="3">에디터 영역</td>
+				</tr>
+				<tr>
+					<th>등록일</th>
+					<td colspan="3">
+				   		<ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2" checked="">
+									<span></span>즉시 등록
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2">
+									<span></span>예약등록
+								</label>
+							</li>
+						</ul>
+						<ul class="cd_img02 clear">
+						   <input type="text" name="sc_txt" value="" class="sc_cd01">
+						   <input type="button" name="sc_btn" value="" class="datepicker n01">
+						   <select style="margin-left:15px;">
+								<option>00:00</option>
+								<option>00:30</option>
+								<option>01:00</option>
+								<option>01:30</option>
+								<option>02:00</option>
+								<option>02:30</option>
+								<option>03:00</option>
+								<option>03:30</option>
+								<option>04:00</option>
+								<option>04:30</option>
+								<option>05:00</option>
+								<option>05:30</option>
+								<option>06:00</option>
+								<option>06:30</option>
+								<option>07:00</option>
+								<option>07:30</option>
+								<option>08:00</option>
+								<option>08:30</option>
+								<option>09:00</option>
+								<option>09:30</option>
+								<option>10:00</option>
+								<option>10:30</option>
+								<option>11:00</option>
+								<option>11:30</option>
+								<option>12:00</option>
+								<option>12:30</option>
+								<option>13:00</option>
+								<option>13:30</option>
+								<option>14:00</option>
+								<option>14:30</option>
+								<option>15:00</option>
+								<option>15:30</option>
+								<option>16:00</option>
+								<option>16:30</option>
+								<option>17:00</option>
+								<option>17:30</option>
+								<option>18:00</option>
+								<option>18:30</option>
+								<option>19:00</option>
+								<option>19:30</option>
+								<option>20:00</option>
+								<option>20:30</option>
+								<option>21:00</option>
+								<option>21:30</option>
+								<option>22:00</option>
+								<option>22:30</option>
+								<option>23:00</option>
+								<option>23:30</option>
+						   </select>
+					   </ul>
+					</td>
+				</tr>
+				<tr>
+					<th>팝업 내용 <span class="color">*</span></th>
+				   <td class="textarea_wp" colspan="5">
+				   	<textarea value="" placeholder="" style="width:100%; height: 80px;"></textarea>
+					   <span class="color">* 앱에 노출되는 팝업 내용</span>
+				   </td>
+				</tr>
+			</table>
+			<ul class="pop_btn clear">
+				<li><a href="#" onclick="self.close()">취소</a></li>
+				<li><a href="#" onclick="self.close()">등록</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

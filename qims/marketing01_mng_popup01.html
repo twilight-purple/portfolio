@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>marketing01_list_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:1000px;}
+    </style>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/int.js"></script>
+</head>
+<body>
+    <div id="pw" class="mk01">
+		<div class="top">당첨자 추출 및 관리</div>
+		<div class="pw_div">
+
+			<h4 class="mgt20">이벤트 기본정보</h4>
+			<table class="tb01 mgt10">
+				<tr>
+					<th>이벤트제목</th>
+					<td colspan="3">중고나라에서 상품 등록만해도 100 포인트를!</td>
+					<th>노출기간</th>
+					<td colspan="3">2018-01-01 13:15 ~ 2018-01-15 15:30</td>
+				</tr>
+				<tr>
+					<th>이벤트타입</th>
+					<td colspan="3">댓글참여형</td>
+					<th>이벤트상태</th>
+					<td colspan="3">추출하기(종료)</td>
+				</tr>
+				<tr>
+					<th>조회수</th>
+					<td>20,510</td>
+					<th>조회회원수</th>
+					<td>18,212 </td>
+					<th>응모수</th>
+					<td>8,500 </td>
+					<th>댓글</th>
+					<td class="a color">8,500</td>
+				</tr>
+			</table>
+
+			<h4 class="mgt20">당첨자 조건설정&nbsp; <span class="color">* 사기, 정지, 블랙, 휴면, 탈퇴 회원은 응모시 자동 제외됩니다</span></h4>
+			<table class="tb01 mgt10">
+				<tr>
+					<th>응모수</th>
+					<td><b class="fnt18">8,400</b> 명</td>
+				</tr>
+				<tr>
+					<th>조건설정</th>
+					<td class="pd10">
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>받은 신고 횟수</p></label> 
+							<input type="text" name="tb_txt" value="" placeholder="" style="width:50px"> 회 이상 제외 <br/>
+
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>중복 아이디 당첨 제외</p></label><br/>
+							
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>특정 아이디 제외</p></label> 
+							<input type="text" name="tb_txt" value="" placeholder="ex. joona@qdillion.com, nara@qdillion.com등" style="width:600px"><br/>
+							
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>이미지 미첨부 댓글 제외</p></label> <br/>
+							
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>댓글 글자수</p></label> 
+							<input type="text" name="tb_txt" value="" placeholder="" style="width:50px"> 자 미만 제외<br/>
+							
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>포함 단어</p></label> 
+							<input type="text" name="tb_txt" value="" placeholder="응모자의 댓글 추출시 포함하고자 하는 단어를 입력해 주세요 (ex. 중고나라,이벤트,참여등)" style="width:640px"><br/>
+							
+							<label class="cb"><input type="checkbox" class="sc_cb" value=""><span></span><p>제외 단어</p></label> 
+							<input type="text" name="tb_txt" value="" placeholder="응모자의 댓글 추출시 포함시키지 않을 단어를 입력해 주세요 (ex. 담배,존나,번개장터등)" style="width:640px"><br/>
+
+							<a class="frgt mgt10 mgr0 qd-btn solid" href="#none">조건 설정</a>
+					</td>
+				</tr>
+				<tr>
+					<th>조건 부합수</th>
+					<td class="pd10">
+						<p class="flft"><b class="fnt18">8,400</b> 명 (조건 미 부합 <span class="color">1,100</span> 명 <span class="color">제외</span>)</p>
+						<a class="frgt mgr0 qd-btn solid" href="#none">엑셀 다운로드</a>
+					</td>
+				</tr>
+			</table>
+
+			<h4 class="mgt20">당첨자 추출</h4>
+			<table class="tb01 mgt10">
+				<tr>
+					<th>응모자 등록</th>
+					<td>
+						<ul class="exer_wp clear">
+							<li>
+								<div class="file_wrap">
+									<div class="upload-btn_wrap">
+										<button type="button" title="찾아보기버튼">
+											<span>첨부하기</span>
+										</button>
+										<input type="file" class="input_file" title="파일찾기" multiple="">
+									</div>
+									<input type="text" class="upload_text" title="파일명" readonly="readonly">
+								</div>
+							</li>
+							<li>
+								<span class="exer_img btn02">엑셀 샘플 다운로드</span>
+							</li>
+							<li>
+								<a class="frgt mgr0 qd-btn solid" href="#none">업로드 엑셀저장</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>엑셀 업로드 건수</th>
+					<td><b class="fnt18">7,000</b> 명</td>
+				</tr>
+				<tr>
+					<th>당첨자 수 </th>
+					<td><input type="text" name="tb_txt" value="" placeholder="" style="width:100px"> 명</td>
+				</tr>
+			</table>
+	
+			<p class="mgt20 clear"><a class=" frgt qd-btn solid" href="#none">당첨자 추출</a></p>
+
+			<h4 class="mgt20">추출 결과</h4>
+			<table class="tb01 mgt10">
+				<tr>
+					<th>최종 당첨자수</th>
+					<td style="width:13%;">
+						<b class="fnt18">10</b> 명<br/>
+					</td>
+					<td style="border-left:0px; padding:5px 0;">
+						<span class="color" style="font-size: 11px; line-height: 10px;">* 순위가 필요할 경우 결과 NO. 순으로 처리합니다.<br/>
+						오류로 인해 `재추출`버튼 글릭 시 `당첨자 리스`트에서 제외되어 `추출 제외 리스트`로 이동되고, 당첨자리스트 최하단에<br/>재추출 당첨자가 표기됩니다. Ex) 총 10위 중 3위 재추출 시 4위 → 3위, 재추출 당첨자가 10위</span>	
+					</td>
+				</tr>
+			</table>
+			<div style="display:block">
+				<h4 class="mgt20 clear">- 당첨자 리스트 <b class="color02">8</b> / 10 <span class="red">(오류 있음 : 2)</span>
+					<a class="frgt qd-btn" href="#none">재추출</a>
+					<a class="frgt qd-btn" href="#none">엑셀 다운로드</a>
+				</h4>
+				<table class="list mgt10">
+					<colgroup>
+						<col style="width:50px"/> <!-- chkbx -->
+						<col style="width:80px"/> <!-- NO -->
+						<col style="width:*"/> <!-- 아이디 -->
+						<col style="width:100px"/> <!-- 닉네임 -->
+						<col style="width:120px"/> <!-- 휴대폰번호 -->
+						<col style="width:70px"/> <!-- 신고 -->
+						<col style="width:70px"/> <!-- 결과 -->
+						<col style="width:150px"/> <!-- 추출일 -->
+						<col style="width:150px"/> <!-- 추출자 -->
+						<col style="width:17px"/> <!-- 여백 -->
+					</colgroup>
+					<tr>
+						<th><label class="cb li"><input type="checkbox" class="sc_cb all03" value=""><span></span></label></th>
+						<th>NO.</th>
+						<th>아이디(이메일)</th>
+						<th>닉네임</th>
+						<th>휴대폰번호</th>
+						<th>신고</th>
+						<th>결과</th>
+						<th>추출일</th>
+						<th>추출자</th>
+						<th>&nbsp;</th>
+					</tr>
+				</table>
+				<div class="scrl-area" style="height:205px"> <!-- [Dev] 스크롤 높이 height :###px 로 조정 -->
+					<table class="list" style="margin-top:-1px">
+					<colgroup>
+						<col style="width:50px"/> <!-- chkbx -->
+						<col style="width:80px"/> <!-- NO -->
+						<col style="width:*"/> <!-- 아이디 -->
+						<col style="width:100px"/> <!-- 닉네임 -->
+						<col style="width:120px"/> <!-- 휴대폰번호 -->
+						<col style="width:70px"/> <!-- 신고 -->
+						<col style="width:70px"/> <!-- 결과 -->
+						<col style="width:150px"/> <!-- 추출일 -->
+						<col style="width:150px"/> <!-- 추출자 -->
+					</colgroup>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td class="color">2</td>
+							<td>오류</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						<tr>
+							<td><label class="cb li"><input type="checkbox" class="sc_cb" value=""><span></span></label></td>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>0</td>
+							<td>당첨</td>
+							<td>2018-01-20 14:22</td>
+							<td>전혜윤(서비스기획팀)</td>
+						</tr>
+						
+					</table>
+				</div>
+			</div> <!-- display togle  wrap -->
+
+			<div style="display:block">
+				<h4 class="mgt20">- 추출 제외 리스트 </h4>
+				<table class="list mgt10">
+					<colgroup>
+						<col style="width:80px"/> <!-- NO -->
+						<col style="width:150px"/> <!-- 아이디 -->
+						<col style="width:100px"/> <!-- 닉네임 -->
+						<col style="width:120px"/> <!-- 휴대폰번호 -->
+						<col style="width:*"/> <!-- 사유 -->
+						<col style="width:17px"/> <!-- 여백 -->
+					</colgroup>
+					<tr>
+						<th>NO.</th>
+						<th>아이디(이메일)</th>
+						<th>닉네임</th>
+						<th>휴대폰번호</th>
+						<th>사유</th>
+						<th>&nbsp;</th>
+					</tr>
+				</table>
+				<div class="scrl-area" style="height:205px"> <!-- [Dev] 스크롤 높이 height :###px 로 조정 -->
+					<table class="list" style="margin-top:-1px">
+					<colgroup>
+						<col style="width:80px"/> <!-- NO -->
+						<col style="width:150px"/> <!-- 아이디 -->
+						<col style="width:100px"/> <!-- 닉네임 -->
+						<col style="width:120px"/> <!-- 휴대폰번호 -->
+						<col style="width:*"/> <!-- 사유 -->
+					</colgroup>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						<tr>
+							<td>##</td>
+							<td>yoon@naver.com</td>
+							<td>지드래곤</td>
+							<td>010-1234-5678</td>
+							<td>신고 수 3회 이상 오류로 추출제외</td>
+						</tr>
+						
+					</table>
+				</div>
+				<p class="mgt20 clear"><a class=" frgt qd-btn solid" href="#none">당첨자 발표하기</a></p>
+			</div> <!-- display togle  wrap -->
+
+			<div style="display:block">
+				<table class="tb01 mgt20">
+					<colgroup>
+						<col style="width:16%"/>
+						<col style="width:16%"/>
+						<col style="width:16%"/>
+						<col style="width:16%"/>
+						<col style="width:16%"/>
+						<col style="width:16%"/>
+					</colgroup>
+					<tr>
+						<th>이벤트상태</th>
+						<td>발표완료</td>
+						<th>당첨자 발표일시</th>
+						<td>2018-01-20 14:30 </td>
+						<th>발표자</th>
+						<td>전혜윤 (서비스기획팀)</td>
+					</tr>
+				</table>
+			</div>
+	   </div>
+		<div class="pop_btn02">
+			<a href="#" onclick="self.close()">취소</a>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb); 
+/*@font-face {*/
+/*    font-family:'NanumGothic';*/
+/*    src: url('images/NanumGothic.eot');*/
+/*}  */
+/*@font-face {*/
+/*    font-family:'NanumGothic';*/
+/*    src: url('images/NanumGothic.eot');*/
+/*    src: url('images/NanumGothic.eot?#iefix') format('embedded-opentype'),*/
+/*         url('images/NanumGothic.woff') format('woff'),*/
+/*         url('images/NanumGothic.ttf') format('truetype');*/
+/*    font-weight: normal;*/
+/*    font-style: normal; */
+/*}*/
+*{	margin: 0; padding: 0; 
+	font-family: 'NanumGothic', '나눔고딕','NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', Dotum;
+}
+ul, li, ol{list-style: none;}
+img{border:none; vertical-align: top;}
+a{color:#000; text-decoration: none;}
+*:focus {outline: none;}
+.clear:after{content:""; display: block; clear: both;}
+
+
+/*로그인*/
+html,body{width:100%; height:100%;}
+#wrap{
+	width:100%; height: 100%; background-color: #231f20; 
+	overflow: hidden; position: relative;
+}
+
+/*로고*/
+.login_center{
+	width:500px; height: 600px; position: absolute; 
+	top:57%; left:50%; text-align: center; 
+	margin-top:-300px; margin-left:-250px;
+}
+.login_center h2{
+	color:#f36430; font-size: 26px; margin-top:20px;
+	cursor: default;
+}
+/*로고*/
+
+/*로그인*/
+.logbox{
+	width: 400px; margin: 0 auto; margin-top:50px; 
+	position: relative;
+}
+.login_center input[type="text"]{
+	width: 100%; height: 50px; border:none;
+	text-align: center; margin-bottom: 8px; font-size: 14px;
+}
+.login_center input[type="password"]{
+	width:100%; height: 50px; border:none;
+	text-align: center; font-size: 14px;
+}
+.logbox>li:nth-child(3){
+	width:100%; height: 50px; background-color: #f36430; 
+	line-height: 50px; margin-top:50px;
+}
+.logbox>li:nth-child(3)>a{color:#fff; display: block; height: 100%;}
+/*로그인*/
+
+/*에러/카피라이트*/
+.error{
+    width:100%; position: absolute; color:#999; 
+    text-align: center; margin-top:8px; opacity: 0; 
+	top:95px; left:0px; font-size: 13px; cursor: default;
+}
+.copyright{
+    color:#999; font-size: 14px; margin-top:50px; 
+	line-height: 20px; cursor: default;
+}
+/*에러/카피라이트*/
+/*로그인*/

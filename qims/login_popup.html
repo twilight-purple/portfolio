@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:400px; height: 335px;}
+        .pop_txt{
+            line-height: 20px; padding: 15px 0; 
+			 text-align: center;
+        }
+        .password_box{width:330px; margin: 0 auto;}
+        .password_box>li input[type="password"]{
+            width:100%; height: 40px; margin-bottom: 5px;
+            box-sizing: border-box; padding-left:10px;
+        }
+        .password_box>li:nth-child(1){margin-bottom: 15px;}
+        .ch_btn{width:312px; margin: 0 auto; margin-top:20px;}
+        .ch_btn>li{
+            width:150px; height: 30px; text-align: center; 
+			line-height: 30px; float: left; font-size: 13px; 
+            font-weight: bold; border-radius: 5px;
+            margin: 0 3px; transition: all 0.3s;
+        }
+        .ch_btn>li>a{display: block; height: 100%; color:#fff;}
+        .ch_btn>li:nth-child(1){background-color: #f36430;}
+        .ch_btn>li:nth-child(2){background-color: #333333;}
+        .ch_btn>li:nth-child(1):hover{background-color: #e34f19;}
+        .ch_btn>li:nth-child(2):hover{background-color: #1c1c1c;}
+    </style>
+</head>
+<body>
+    <div id="pw">
+		<div class="top">비밀번호 변경</div>
+        <p class="pop_txt">
+            3개월 동안 동일한 비밀번호를 사용하고 있습니다.<br>
+            개인정보 보호를 위해 비밀번호를 변경해주세요.
+        </p>
+        <ul class="password_box">
+            <li>
+                <input type="password" name="ch_pass" value="" placeholder="현재 비밀번호">
+            </li>
+            <li>
+                <input type="password" name="ch_pass" value="" placeholder="신규 비밀번호">
+            </li>
+            <li>
+                <input type="password" name="ch_pass" value="" placeholder="신규 비밀번호 확인">
+            </li>
+        </ul>
+        <ul class="ch_btn clear">
+            <li><a href="#" onclick="self.close()">90일 뒤에 변경하기</a></li>
+            <li><a href="#" onclick="self.close()">비밀번호 변경하기</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>service12_popup03</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#pw{width: 800px;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/service.js"></script>
+</head>
+<body>
+	<div id="pw" class="sv12_03">
+		<div class="top">엑셀 업로드</div>
+		<div class="pw_div">
+			<table class="tb01">
+				<tr>
+					<th>키워드 업로드</th>
+					<td>
+						<div class="file_wrap">
+							<div class="upload-btn_wrap">
+								<button type="button" title="찾아보기버튼">
+									<span>첨부하기</span>
+								</button>
+								<input type="file" class="input_file" title="파일찾기" multiple="">
+							</div>
+							<input type="text" class="upload_text" title="파일명" readonly="readonly">
+							<span class="exer_img btn02">
+								엑셀 샘플 다운로드
+							</span>
+				   		</div>
+						<input type="button" value="업로드 엑셀 저장" style="width:120px;">
+					</td>
+				</tr>
+				<tr>
+					<th>키워드 건수</th>
+					<td><b>1,000</b>건</td>
+				</tr>
+			</table>
+		</div>
+		<div class="pop_btn02">
+			<a href="#" onclick="self.close()">엑셀 업로드</a>
+		</div>
+	</div>
+</body>
+</html>

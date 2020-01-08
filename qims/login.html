@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qdillion</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/font.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+   <script src="js/login.js"></script>
+	<script>
+	//		팝업창
+	function loginpopupCenter(href,w,h){
+	   var xPos = (document.body.clientWidth / 2) - (w / 2); 
+		   xPos += window.screenLeft;  //듀얼 모니터
+	   var yPos = (screen.availHeight / 2) - (h / 2);
+
+		window.open("http://ph.hansfrom.net/qims/login_popup.html","login_popup","width="+w+",height="+h+", left="+xPos+", top="+yPos+", toolbars=no, resizable=no, scrollbars=no");
+	}
+	//		팝업창
+	</script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="login_center">
+            <h1><img src="img/logo.png" width="300"></h1>
+            <h2>통합관리시스템</h2>
+            <ul class="logbox">
+                <li>
+                    <input type="text" name="logid" value="" placeholder="아이디를 입력해주세요">
+                </li>
+                <li>
+                    <input type="password" name="logpassword" value="" placeholder="비밀번호를 입력해주세요">
+                    <p class="error">등록되지 않은 정보입니다. 다시 확인해주세요.</p>
+                </li>
+                <li><a href="#" onclick="loginpopupCenter(this.href,400,335,'no');">로그인</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                (주) 큐딜리온, 서울시 강남구 테헤란로 447 KB우준타워 7층
+                <br>Copyright ⓒ qdillion. all right reserved. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

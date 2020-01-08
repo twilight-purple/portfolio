@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deal05_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:1100px;}
+    </style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/deal.js"></script>
+</head>
+<body>
+    <div id="pw" class="dl05">
+		<div class="top">택배서비스 이용 상세</div>
+		<div class="pw_div">
+			<table class="tb02">
+				<tr>
+					<th>닉네임(이름)</th>
+					<th>보낸 택배건수(판매)</th>
+					<th>받은 택배건수(구매)</th>
+				</tr>
+				<tr>
+					<td class="color mb_pop a">미밍(민소연)</td>
+					<td>12회</td>
+					<td>35회</td>
+				</tr>
+			</table>
+		   <table class="sc">
+			   <tr>
+				   <th>예약일</th>
+				   <td class="cd_img clear" width="33%">
+					   <input type="text" name="sc_txt" value="" class="sc_cd01">
+					   <input type="button" name="sc_btn" value="" class="datepicker n01">
+					   ~
+					   <input type="text" name="sc_txt" value="" class="sc_cd02">
+					   <input type="button" name="sc_btn" value="" class="datepicker n02">
+					   <label class="cb">
+						 <input type="checkbox" class="sc_cb not" value="">
+						 <span></span>
+						 <p>기한없음</p>
+					   </label>
+				   </td>
+				   <th>이용타입</th>
+				   <td>
+					   <select>
+						   <option>전체</option>
+						   <option>보낸 택배건수(판매)</option>
+						   <option>받은 택배건수(구매)</option>
+					   </select>
+				   </td>
+				   <th>택배신청번호</th>
+				   <td>
+					   <input type="text" name="pop_txt" value="">
+					   <input type="button" name="sc_btn" value="검색">
+				   </td>
+			   </tr>
+		   </table>
+		   <ul class="list_top clear">
+			   <li>전체 120건,</li>
+			   <li class="clear'">
+				   <ul class="list_nm">
+					   <li class="on">1</li>
+				   </ul>
+				   <p>/ 10 페이지</p>
+			   </li>
+			   <li><span>(2018-01-01 ~ 2018-01-31)</span></li>
+			   <li>
+				   <select>
+					   <option>50개씩</option>
+					   <option>100개씩</option>
+					   <option>150개씩</option>
+					   <option>200개씩</option>
+					   <option>250개씩</option>
+				   </select>
+			   </li>
+		   </ul>
+		   <ul class="list_view clear">
+			   <li class="on">
+				   <table class="list">
+					   <tr>
+						   <th style="width:4%">NO.</th>
+						   <th class="img">택배신청번호<img src="img/down02.png"></th>
+						   <th>이용타입</th>
+						   <th>거래회원 아이디</th>
+						   <th>거래회원 닉네임</th>
+						   <th>처리상태</th>
+						   <th class="img">예약일<img src="img/down02.png"></th>
+						   <th>상품명</th>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   <tr>
+						   <td>90</td>
+						   <td class="color a">1231234678</td>
+						   <td>보낸 택배건수 (판매)</td>
+						   <td class="color a">m@joongna.com</td>
+						   <td class="color a">밍소</td>
+						   <td>접수완료</td>
+						   <td>YYYY-MM-DD HH:MM:SS</td>
+						   <td class="color a">코알라 인형 팔아 팝니다 팔아요팔아팝니다</td>
+					   </tr>
+					   
+				   </table>
+			   </li>
+			</ul>
+		   <div class="btn_wrap clear" style="margin-top:15px">
+			   <ul class="btn_left clear">
+				   <li><img src="img/back02.png"></li>
+				   <li><img src="img/back.png"></li>
+			   </ul>
+			   <ul class="btn clear">
+				   <li class="on">1</li>
+			   </ul>
+			   <ul class="btn_right clear">
+				   <li><img src="img/next.png"></li>
+				   <li><img src="img/next02.png"></li>
+			   </ul>
+		   </div>
+		</div>
+		<div class="pop_btn02">
+			<a href="#" onclick="self.close()">닫기</a>
+		</div>
+		</div>
+		
+</body>
+</html>

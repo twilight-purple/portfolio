@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>e내일신문</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb-title").text("마이페이지");
+        });
+    </script> 
+</head>
+<body>
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+    <section class="wid-100">
+       
+        <h2 class="m-mypage-title mgb-20">
+            안녕하세요 회원님<br><b><span>마이페이지</span>에 오신 것을 환영합니다.</b>
+        </h2>
+        
+        <ul class="m-mypage-cont mgb-20">
+            <li>
+                <a href="#"><p>회원정보 수정</p></a>
+            </li> 
+            <li>
+                <a href="#"><p>내가 팔로우한 기자</p></a>
+            </li>
+            <li>
+                <a href="#"><p>내가 작성한 댓글</p></a>
+            </li>
+            <li>
+                <a href="#"><p>내가 스크랩한 리포트</p></a>
+            </li>
+        </ul>
+        
+        <div class="m-mypage-whitespace"></div>
+    </section>
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deal02_guide_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:510px; height: 560px;}	
+    </style>
+</head>
+<body>
+    <div id="pw" class="dl_gd">
+		<div class="top">거래내역 요약 항목 가이드</div>
+		<ul class="pop_ul">
+			<li class="clear">
+				<h3>총 거래건수</h3>
+				<p>: 검색한 기간 내 진행된 안전결제 거래 건의 합계<br>
+					&nbsp;(무통장입금예정 제외)</p>
+			</li>
+			<li class="clear">
+				<h3>거래금액</h3>
+				<p>: 거래완료(정산 완료/정산 미완료 전체) 건에 한해 합산<br>
+					&nbsp;정산완료 건은 [결제/배송>안전결제관리>정산관리]에서 확인<br>
+					&nbsp;구매자의 구매확정(또는 자동구매확정) 후 다음날(영업일 기준)<br>
+					&nbsp;14시 전후 판매자 계좌로 송금<br>
+					&nbsp;(무통장입금 예정 제외)</p>
+			</li>
+			<li class="clear">
+				<h3>진행중 거래</h3>
+				<p>: 결제완료/판매수락/배송중/배송완료. 정산 예정 거래 건 수</p>
+			</li>
+			<li class="clear">
+				<h3>거래완료</h3>
+				<p>: 거래완료 (정산 완료/정산 미완료 전체)</p>
+			</li>
+			<li class="clear">
+				<h3>거래취소</h3>
+				<p>: 판매자취소/구매자취소/무통장입금취소/관리자취소<br>
+					&nbsp;(무통장입금 취소 제외)</p>
+			</li>
+			<li class="clear">
+				<h3>반품</h3>
+				<p>: 반품신청/반품수락/반품배송중/반품완료</p>
+			</li>
+			<li class="clear">
+				<h3>무통장입금예정</h3>
+				<p>: 무통장입금 예정 건</p>
+			</li>
+		</ul>
+        <div class="pop_btn02">
+			<a href="#" onclick="self.close()">닫기</a>
+		</div>
+    </div>
+</body>
+</html>

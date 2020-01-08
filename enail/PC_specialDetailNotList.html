@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-내일신문</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/select_box.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select_box.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gnb04.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb-menu > li").eq(3).addClass("on");
+            $(".gnb02_txt").text("스페셜리포트");
+        });
+    </script>
+</head>
+<body>
+
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+
+    <section class="mgt-50 wid-1115">
+       
+        <div class="sprofile-wrap">
+            <div class="sprofile-bg">
+                <div></div>
+            </div>
+            <div class="sprofile-cont">
+                <ul class="sprofile-img">
+                    <li>
+                        <img src="img/people/main-people01.jpg">
+                        <a href="#"><span>정재철</span><br>기자</a>
+                    </li>
+                    <li>
+                        <img src="img/people/main-people02.jpg">
+                        <a href="#"><span>정재철</span><br>기자</a>
+                    </li>
+                    <li>
+                        <img src="img/people/main-people03.jpg">
+                        <a href="#"><span>정재철</span><br>기자</a>
+                    </li>
+                    <li>
+                        <img src="img/people/main-people01.jpg">
+                        <a href="#"><span>정재철</span><br>기자</a>
+                    </li>
+                    <li>
+                        <img src="img/people/main-people02.jpg">
+                        <a href="#"><span>정재철</span><br>기자</a>
+                    </li>
+                </ul>
+                <div class="sprofile-line"></div>
+                <h2>
+                    행정팀의<br><span>내일증권 소식 이야기</span>
+                </h2>
+            </div>
+        </div>
+        
+        <div class="gnb-change relative pdt-50 mgb-100">
+           
+            <div class="news-data-wrap mgb-130">
+                <div class="swiper-container data">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on">2018</div>
+                        <div class="swiper-slide">2017</div>
+                        <div class="swiper-slide">2016</div>
+                        <div class="swiper-slide txtc05">2015</div>
+                        <div class="swiper-slide txtc05">2014</div>
+                        <div class="swiper-slide txtc05">2013</div>
+                        <div class="swiper-slide txtc05">2012</div>
+                        <div class="swiper-slide txtc05">2011</div>
+                        <div class="swiper-slide txtc05">2010</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next data-next"><span></span></div>
+                <div class="swiper-button-prev data-prev"><span></span></div>
+            </div>
+            
+            <div class="select-box news-data-select">
+                <select>
+                    <option>전체</option>
+                    <option>1월</option>
+                    <option>2월</option>
+                    <option>3월</option>
+                    <option>4월</option>
+                    <option>5월</option>
+                    <option>6월</option>
+                    <option>7월</option>
+                    <option>8월</option>
+                    <option>9월</option>
+                    <option>10월</option>
+                    <option>11월</option>
+                    <option>12월</option>
+                </select>
+            </div>
+            
+            <div class="news-data-cont">
+                <div class="empty">
+                    <p>등록된 글이 없습니다.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>

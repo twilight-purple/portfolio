@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>system01_popup02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:500px;}
+    </style>
+</head>
+<body>
+    <div id="pw" class="syt01_01">
+		<div class="top">사원 상세</div>
+		<div class="pw_div">
+			<ul class="tb">
+				<li class="clear">
+					<div class="left">이름</div>
+					<div class="right"><input type="text" value="허길행"></div>
+				</li>
+				<li class="clear">
+					<div class="left">아이디</div>
+					<div class="right"><input type="text" value="basdor"> @ qdillion.com</div>
+				</li>
+				<li class="clear">
+					<div class="left">부서</div>
+					<div class="right">
+						<select>
+							<option>부서 선택</option>
+							<option>C-Level</option>
+							<option>더블퀘스천</option>
+							<option>개발실</option>
+							<option>서버개발팀</option>
+							<option>클라이언트 개발팀</option>
+							<option>데브옵스 파트</option>
+							<option>신규사업팀</option>
+							<option>광고사업팀</option>
+							<option>기획운영실</option>
+							<option>디자인팀</option>
+							<option selected="">서비스기획팀</option>
+							<option>보안파트</option>
+							<option>경영지원실</option>
+							<option>재무회계팀</option>
+							<option>인사총무팀</option>
+							<option>홍보팀</option>
+							<option>상품개발팀</option>
+						</select>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="left">권한 등급</div>
+					<div class="right">
+						<select>
+							<option>LEVEL 선택</option>
+							<option>LEVEL0 (시스템관리)</option>
+							<option>LEVEL1 (사원급)</option>
+							<option selected="">LEVEL2 (선임급)</option>
+							<option>LEVEL3 (책임&파트장급)</option>
+							<option>LEVEL4 (팀장급)</option>
+							<option>LEVEL5 (임원급)</option>
+						</select>
+					</div>
+				</li>
+				<li class="clear">
+					<div class="left">비밀번호</div>
+					<div class="right"><input type="button" value="비밀번호 초기화" style="width:120px; margin-right:10px; height: 30px;">※ 초기 비밀번호 : <span class="org">qdillion</span></div>
+				</li>
+			</ul>
+			<ul class="pop_btn clear">
+				<li><a href="#" onclick="self.close()">취소</a></li>
+				<li><a href="#" onclick="self.close()">수정</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

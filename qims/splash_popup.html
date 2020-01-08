@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>splash_popup</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.splashpop_wrap{width: 300px; height: 450px; position: relative;}
+		.splashpop_top{
+			width:100%; height: 40px; background-color: #333;
+			color:#fff; font-size: 14px; padding-left:10px;
+			line-height: 40px; box-sizing: border-box; 
+			cursor: default;
+		}
+		.splashpop_img{
+			width: 240px; height: 320px; border:1px solid #000;
+			margin: 0 auto; margin-top: 20px; opacity: 0.3;
+			background-image: url(img/stripe_color.png);			
+			background-position: center; background-size: 400px;
+		}
+		.splashpop_txt{
+			width: 200px; cursor: default;
+			color:#000; font-size: 13px; font-weight: bold;
+			text-align: center; position: absolute; 
+			top: 43%; left: 50%; margin-left:-100px;
+		}
+		.splashpop_btn{
+			width: 70px; height: 25px; background-color: #333;
+			line-height: 25px; text-align:center; font-size: 13px; 
+			font-weight: bold; margin: 0 auto; transition: all 0.3s;
+			margin-top: 20px; border-radius: 5px;
+		}
+		.splashpop_btn:hover{background-color: #000;}
+		.splashpop_btn a{display: block; height: 100%; color:#fff;}
+	</style>
+</head>
+<body>
+	<div class="splashpop_wrap">
+		<div class="splashpop_top">스플래시 영역 미리보기</div>
+		<div class="splashpop_img"></div>
+		<p class="splashpop_txt">스플래시 콘텐츠 영역<br>(이미지 첨부)</p>
+		<div class="splashpop_btn">
+			<a href="#" onclick="self.close()">닫기</a>
+		</div>
+	</div>
+</body>
+</html>

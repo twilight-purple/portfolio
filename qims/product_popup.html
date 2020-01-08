@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product_popup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw{width:1200px;}
+    </style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/product.js"></script>
+</head>
+<body>
+    <div id="pw" class="prd">
+		<div class="top">상품 상세</div>
+		<div class="svtop clear">
+		   <li>JN17122000001</li>
+		   <li class="svtop_right">
+			   <ul class="clear">
+				   <li class="hide_btn">
+					   <ul>
+						   <li class="bt_hd">상품숨김</li>
+						   <li>상품숨김 해제</li>
+					   </ul>
+				   </li>
+				   <li><input type="button" class="btn01" value="상품링크복사" style="width:100px;"></li>
+			   </ul>
+		   </li>
+	   </div>
+		<table class="tb01">
+			<tr>
+				<th>상품구분</th>
+				<td>
+					<select id="stxt">
+						<option>판매중</option>
+						<option>예약중</option>
+						<option>판매보류</option>
+						<option>판매완료</option>
+						<option>상품삭제</option>
+						<option>관리자숨김</option>
+						<option>신고숨김</option>
+					</select>
+					<a class="stxt_a" href="#">사유보기</a>
+				</td>
+				<th>판매자/등급</th>
+				<td><a class="mb_pop" href="#">한버로티(김보배)</a> / GOLD</td>
+				<th>최초 상품 등록일</th>
+				<td>YYYY-MM-DD HH:MM:SS</td>
+			</tr>
+			<tr>
+				<th>최근 업데이트일(횟수)</th>
+				<td>YYYY-MM-DD HH:MM:SS (2회)</td>
+				<th>구매자/등급</th>
+				<td><a class="mb_pop" href="#">지드래곤(전혜윤)</a> / VIP</td>
+				<th>상품판매일</th>
+				<td>YYYY-MM-DD HH:MM:SS</td>
+			</tr>
+			<tr>
+				<th>거래정보</th>
+				<td><a class="de_pop" href="#">거래완료(구매대금 입금) / <br>안전결제(무통장입금)</a></td>
+				<th>편의점택배/용달 이용</th>
+				<td><a class="pp_pop" href="#">Y(대한통운 1022546785123)</a> / <a href="#">Y</a></td>
+				<th>후기작성 여부(작성일)</th>
+				<td><a class="rvw_pop" href="#">Y</a>&nbsp;&nbsp;(YYYY-MM-DD HH:MM:SS)</td>
+			</tr>
+			<tr>
+				<th>상품 신고 수</th>
+				<td><a href="#">1회</a></td>
+				<th>조회/찜/공유/댓글</th>
+				<td>조회 246 / 찜 7 /공유 3 / <a class="cmm_pop" href="#">댓글 8</a></td>
+				<th>위탁상품여부</th>
+				<td>Y</td>
+			</tr>
+			<tr>
+				<th>최근 수정 관리자</th>
+				<td colspan="5">
+					김보배(서비스기획팀)
+					<input type="button" name="tb_btn" value="수정이력" class="mg_pop">
+				</td>
+			</tr>
+		</table>
+		<table class="tb01">
+			<tr>
+				<th>상품명</th>
+				<td>나이키 240 팝니다</td>
+				<th>상품상태</th>
+				<td>미개봉 / 풀박</td>
+				<th>가격<br>(배송비 포함여부)</th>
+				<td>52,000 / 배송비포함</td>
+			</tr>
+			<tr>
+				<th colspan="4" style="text-align:center" width="70%">상품이미지</th>
+				<th>카테고리</th>
+				<td>오토바이/차량부품/용품&#62;블랙박스/네<br>비게이션</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="pd">
+					<div class="imgbox02">
+						<ul class="clear">
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+								   <ul>
+									   <li>숨김</li>
+									   <li>숨김해제</li>
+								   </ul>
+							   </div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn on">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn on">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p>img</p>
+								<div class="hide_btn">
+									<ul>
+										<li>숨김</li>
+										<li>숨김해제</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</td>
+				<th>상품 상세옵션</th>
+				<td>
+					색상 : <span class="rd_color"></span><br>
+					사이즈 : 240<br>
+					소재 : 폴리에스테르<br>
+					스타일 : 스트라이프<br>
+					사용연령 : 24개월
+				</td>
+			</tr>
+			<tr>
+				<th>상품영상</th>
+				<td class="hide_btn_wp clear">
+					<a href="#">abcde12345.mp4</a>
+					<div class="hide_btn">
+						<ul>
+							<li>숨김</li>
+							<li>숨김해제</li>
+						</ul>
+					</div>
+				</td>
+				<th>검색 키워드</th>
+				<td>나이키, 신발, 240, 여자운동화, 운동화</td>
+				<th>거래희망지역</th>
+				<td>
+					안산시 단원구 고잔동<br>
+					삼성역<br>
+					마곡나루 보타닉 푸르지오시티
+				</td>
+			</tr>
+			<tr>
+				<th>상세내용</th>
+				<td colspan="6" class="textarea_wp">
+					<textarea name="list02_txt" value="" placeholder="" maxlength="1,000">신은지는 얼마 안 된 상품입니다. 아껴 신어서 하자도 없고 완전 좋은 상태입니다.&#10;직거래는 역삼동 근처에서 가능하고 그 외에는 택배 착불로 발송됩니다.(선불 시 4,000원 추가)&#10;입력한 만큼 표기됩니다. 1,000자까지</textarea>
+				</td>
+			</tr>
+		</table>
+        <ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li><a href="#" onclick="self.close()">수정/적용</a></li>
+		</ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>service03_popup</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#pw{width: 800px; height: auto;}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/service.js"></script>
+</head>
+<body>
+	<div id="pw" class="sv03">
+		<div class="top">카테고리 옵션 설정</div>
+<!--		표1-->
+		<ul class="ptl01 clear">
+			<li>적용</li>
+			<li>사이즈(신발), 소재</li>
+		</ul>
+<!--		표1-->
+<!--		표2-->
+		<div class="btn">옵션추가</div>
+		<ul class="ptl02 clear">
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(신발)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(의류)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					소재
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(유아동)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(악세사리)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					스타일(의류)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					스타일(안경테)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(하의)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(신발)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					사이즈(의류)
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+			<li>
+				<label class="cb">
+					<input type="checkbox" class="search_cb" value="">
+					<span></span>
+				   <p class="contents_search_cbtxt">
+					소재
+				   </p>
+			   </label>
+			   <img src="img/set.png">
+			</li>
+		</ul>
+<!--		표2-->
+<!--		표3-->
+		<div class="ptl03_wrap">
+		<h3>카테고리 옵션 상세설정</h3>
+		<div class="ptl03 clear">
+			<ul class="clear">
+				<li>옵션명</li>
+				<li><input type="text" name="ptl_txt" value="사이즈(신발)"></li>
+			</ul>
+			<ul class="clear">
+				<li>선택필드</li>
+				<li>
+					<ul>
+						<li>
+							<input type="text" name="ptl_txt" value="200">
+							<input type="button" name="ptl_btn" value="+">
+						</li>
+						<li>
+							<input type="text" name="ptl_txt" value="205">
+							<input type="button" name="ptl_btn" value="+">
+							<input type="button" name="ptl_btn" value="-">
+						</li>
+						<li>
+							<input type="text" name="ptl_txt" value="210">
+							<input type="button" name="ptl_btn" value="+">
+							<input type="button" name="ptl_btn" value="-">
+						</li>
+						<li>
+							<input type="text" name="ptl_txt" value="215">
+							<input type="button" name="ptl_btn" value="+">
+							<input type="button" name="ptl_btn" value="-">
+						</li>
+						<li>
+							<input type="text" name="ptl_txt" value="220">
+							<input type="button" name="ptl_btn" value="+">
+							<input type="button" name="ptl_btn" value="-">
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="pop_btn sr01">
+				<li><a href="#" onclick="self.close()">취소</a></li>
+				<li><a href="#" onclick="self.close()">설정완료</a></li>
+			</ul>
+		</div>
+		</div>
+<!--		표3-->
+		<ul class="pop_btn sr02">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li><a href="#" onclick="self.close()">적용</a></li>
+		</ul>
+	</div>
+</body>
+</html>

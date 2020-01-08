@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>member_popup</title>
+	<link rel="stylesheet" href="css/style.css">
+    <style>
+        #pw.mb{width:1300px;}
+	</style>
+</head>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+	<script src="js/member_popup.js"></script>
+	<script src="js/operation.js"></script>
+<body>
+	<div id="pw" class="mb">
+<!--	팝업창 타이틀-->
+		<div class="top">회원/스토어 상세</div>
+<!--	팝업창 타이틀-->
+<!--	탭메뉴버튼-->
+		<ul class="pt_btn clear">
+			<li class="on">통합정보</li>
+			<li>거래내역</li>
+			<li>스토어 정보/후기</li>
+			<li>1:1문의/신고</li>
+			<li>광고/수익</li>
+		</ul>
+<!--	탭메뉴버튼-->
+<!--	고정영역-->
+		<div class="pt_int">
+<!--		고정영역 상단-->
+			<div class="pt_int_top clear">
+				<ul class="pt_int_left clear">
+					<li><a href="#">img</a></li>
+					<li>
+						<span>한버로티</span>(김보배 / JN17122000001)
+					</li>
+					<li><a class="pname_pop" href="#">닉네임/이름 변경이력</a></li>
+					<li><a href="#">채팅내역 조회</a></li>
+				</ul>
+				<ul class="pt_int_right clear">
+					<li>PUSH 발송</li>
+					<li>SMS 전송</li>
+					<li>E-mail 전송</li>
+					<li>스토어링크복사</li>
+				</ul>
+			</div>
+<!--		고정영역 상단-->
+<!--		고정영역 리스트-->
+			<table class="tb03 v01">
+				<colgroup>
+					<col width="12%"/>
+					<col width="20%"/>
+					<col width="12%"/>
+					<col width="20%"/>
+					<col width="15%"/>
+					<col width="25%"/>
+				</colgroup>
+				<tr>
+					<th>아이디(이메일)</th>
+					<td>fusidin3058@naver.com</td>
+					<th>최근접속 일시</th>
+					<td>2017-12-19 23:26:48</td>
+					<th>스토어 등급</th>
+					<td>
+						<select>
+							<option>전체</option>
+							<option>ORANGE</option>
+							<option>SILVER</option>
+							<option selected="">GOLD</option>
+							<option>VIP</option>
+						</select> <span class="line">(전환 : 2017-07-24 13:14:29)</span>
+					</td>
+				</tr>
+				<tr>
+					<th>회원구분</th>
+					<td>
+						<select>
+						   <option>전체</option>
+						   <option selected="">일반</option>
+						   <option>블랙</option>
+						   <option>정지</option>
+						   <option>관리자삭제</option>
+						   <option>탈퇴</option>
+						   <option>휴면</option>
+					   </select>
+					</td>
+					<th>휴대폰번호</th>
+					<td class="clear">
+						010-2576-8350
+						<input type="button" name="mb_btn" value="변경이력" class="ptel_pop">
+					</td>
+					<th>문의/받은신고/보낸신고</th>
+					<td>
+						<a class="tc01" href="#">3회</a> / <a class="tc02" href="#">2회 / 1회</a>
+					</td>
+				</tr>
+				<tr>
+					<th>사이버캅 조회</th>
+					<td class="clear">
+						사기이력 없음<br>
+						<span class="line">(2017-12-24 22:49:20 기준)</span>
+						<input type="button" name="mb_btn" value="조회">
+					</td>
+					<th>더치트 조회</th>
+					<td class="clear">
+						<span class="color">사기이력 있음</span><br>
+						<span class="line">(2017-12-24 22:49:20 기준)</span>
+						<input type="button" name="mb_btn" value="조회">
+					</td>
+					<th class="btn02_wrap">경고 / 관심<input type="button" name="mb_btn" value="경고초기화" class="rst"></th>
+					<td class="btn02_wrap clear">
+						<a class="pwar_pop" href="#">2회</a>
+						<input type="button" name="mb_btn" value="경고하기" class="prs_pop">
+						<div class="hide_btn">
+							<ul>
+								<li>관심회원설정</li>
+								<li>관심회원해제</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>회원특이사항<br>(관심회원 설정사유)</th>
+					<td colspan="3" class="textarea_wp">
+						<textarea name="list02_txt" value=" " placeholder="관심회원 설정사유 및 회원 특이사항을 입력해 주세요"></textarea>
+					</td>
+					<th>최근 관리 수정자</th>
+					<td>김보배(서비스기획팀) <input type="button" name="mb_btn" value="수정이력" class="pmng_pop"></td>
+				</tr>
+			</table>
+<!--		고정영역 리스트-->
+		</div>
+<!--	고정영역-->
+<!--	탭 영역-->
+		<div class="pt_view">
+			<ul class="pt_wrap">
+<!--			 통합정보 탭영역-->
+				<li class="v01 on">
+					<table class="tb03 v02">
+						<tr>
+							<th>가입 경로/일시<br>입력 추천인 코드</th>
+							<td>이메일 가입 (2016-12-25 00:23:56)<br>코드 : DKw9474</td>
+							<th>월평균/누적 접속</th>
+							<td>15회 / 1,854회</td>
+							<th>성별/생년월일<br>법정대리인 인증</th>
+							<td>여성 / 1991-02-07<br>(법정대리인 인증 대상 아님)</td>
+						</tr>
+						<tr>
+							<th>로그인/카페 연동정보</th>
+							<td  class="lh02">
+								네이버 : 네이버 연동정보<br>
+								카카오 : 카카오 연동정보<br>
+								페이스북 : 페이스북 연동정보<br>
+								이메일 : 이메일연동정보<br>
+								카페 : 카페연동정보
+							</td>
+							<th>약관 동의여부</th>
+							<td  class="lh02">
+								중고나라 이용약관(동의 : 2017-12-20 11:57:49)<br>
+								전자금융거래 이용약관(동의 : 2017-12-20 11:57:49)<br>
+								위치정보 이용약관(동의 : 2017-12-20 11:57:49)<br>
+								개인정보 취급방침(동의 : 2017-12-20 11:57:49)<br>
+							</td>
+							<th>마케팅수신동의 여부</th>
+							<td  class="lh02">
+								알림허용 (동의 : 2017-12-20 11:57:49)<br>
+								PUSH (동의 : 2017-12-20 11:57:49)<br>
+								SMS (동의 : 2017-12-20 11:57:49)<br>
+								E-mail (동의 : 2017-12-20 11:57:49)<br>
+							</td>
+						</tr>
+						<tr>
+							<th>고유추천코드/추천수</th>
+							<td>JN36YK8 / 8명</td>
+							<th>운영체제/기기정보</th>
+							<td>iOS / 11.02.01</td>
+							<th>회원 최근위치 정보</th>
+							<td>서울시 강남구 역삼동</td>
+						</tr>
+						<tr>
+							<th>광고진행여부</th>
+							<td><a class="tc03" href="#">Y</a></td>
+							<th>포인트</th>
+							<td>
+								2,500
+								<input type="button" name="mb_btn" value="조회/지급">
+							</td>
+							<th>캐시</th>
+							<td>
+								20,000
+								<input type="button" name="mb_btn" value="조회">
+							</td>
+						</tr>
+						<tr>
+							<th>총 거래(판매/구매)</th>
+							<td>총 47건(<a class="tc04" href="#">32건 / 15건</a>)</td>
+							<th>택배이용 / 용달이용</th>
+							<td><a class="pps_pop" href="#">3회</a> / <a href="#">2회</a></td>
+							<th>평균점수/거래만족 수</th>
+							<td><a href="#">3.2점 / 15건</a></td>
+						</tr>
+						<tr>
+							<th>계좌정보 / 실명인증</th>
+							<td class="ulli">
+								<ul>
+									<li class="color">우리은행 111122333(김보배) / Y <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>우리은행 111122333(김보배) / Y <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>우리은행 111122333(김보배) / N <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>우리은행 111122333(김보배) / N <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>우리은행 111122333(김보배) / Y <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+								</ul>
+							</td>
+							<th>배송지</th>
+							<td class="ulli">
+								<ul>
+									<li class="color">안산시 단원구 고잔동 111-111 222호 <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>안산시 강서구 마곡동 111-111 333호 <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+									<li>안산시 관악구 신림동 111-111 444호 <input type="button" name="mb_btn" value="삭제" class="ibtn"></li>
+								</ul>
+							</td>
+							<th>대표 카테고리</th>
+							<td class="lh03">
+								수입명품&#62;수입명품 전체<br>
+								패션의류&#62;여성의류<br>
+								오토바이/차량부품/용품&#62;블랙박스/네비게이션
+							</td>
+						</tr>
+					</table>
+				</li>
+<!--			 통합정보 탭영역-->
+<!--			 거래내역 탭영역-->
+				<li class="v02">
+					<table class="tb02 v03">
+						<tr>
+							<th rowspan="2">총 거래건수</th>
+							<th rowspan="2">판매건수</th>
+							<th rowspan="2">구매건수</th>
+							<th rowspan="2">총 거래금액</th>
+							<th colspan="3">안전결제</th>
+							<th rowspan="2">즉시송금<br>(PAYCO)</th>
+							<th rowspan="2">직접거래</th>
+						</tr>
+						<tr>
+							<th style="border-left:1px solid #ededed">신용카드</th>
+							<th>무통장입금</th>
+							<th>실시간계좌이체</th>
+						</tr>
+						<tr>
+							<td>47건</td>
+							<td>32건</td>
+							<td>15건</td>
+							<td>1,250,000</td>
+							<td>4건</td>
+							<td>2건</td>
+							<td>3건</td>
+							<td>3건</td>
+							<td>5건</td>
+						</tr>
+					</table>
+					<table class="sc v01">
+						<tr>
+							<th>기간</th>
+							<td class="cd_img clear" width="23%">
+							   <input type="text" name="sc_txt" value="" class="sc_cd01">
+							   <input type="button" name="sc_btn" value="" class="datepicker n01">
+							   ~
+							   <input type="text" name="sc_txt" value="" class="sc_cd02">
+							   <input type="button" name="sc_btn" value="" class="datepicker n02">
+						   </td>
+							<th>거래방식</th>
+							<td width="15%">
+								<select>
+									<option>전체</option>
+									<option>안전결제</option>
+									<option>즉시송금</option>
+									<option>직접거래</option>
+								</select>
+							</td>
+							<th>상품명</th>
+							<td>
+								<input type="text" name="sc_txt" value="">
+					   			<input type="button" name="sc_btn" value="검색">
+							</td>
+						</tr>
+					</table>
+				   <ul class="list_top clear">
+					   <li>전체 50건,</li>
+					   <li class="clear'">
+						   <ul class="list_nm">
+							   <li class="on">1</li>
+						   </ul>
+						   <p>/ 3 페이지</p>
+					   </li>
+					   <li><span>(2018-07-01 ~ 2018-09-05)</span></li>
+					   <li>
+						   <select>
+							   <option>20개씩</option>
+							   <option>40개씩</option>
+							   <option>60개씩</option>
+							   <option>80개씩</option>
+							   <option>100개씩</option>
+						   </select>
+					   </li>
+				   </ul>
+				   <ul class="list_view clear">
+					   <li class="on">
+						   <table class="list">
+							   <tr>
+								   <th>NO.</th>
+								   <th class="img">거래번호<img src="img/down02.png"></th>
+								   <th>판매자</th>
+								   <th>구매자</th>
+								   <th>상품명</th>
+								   <th>거래방식</th>
+								   <th class="img">결제금액<img src="img/down02.png"></th>
+								   <th class="img">수수료<img src="img/down02.png"></th>
+								   <th>결제수단</th>
+								   <th>거래상태</th>
+								   <th class="img">결제일<img src="img/down02.png"></th>
+								   <th class="img">상태변경일<img src="img/down02.png"></th>
+							   </tr>
+							   <tr>
+								   <td>50</td>
+								   <td>1231234678</td>
+								   <td class="color">k@m.com(한버로티)</td>
+								   <td>k@m.com(스즈땽)</td>
+								   <td class="a">나이키 후드 삼줄</td>
+								   <td>안전결제</td>
+								   <td>500,000</td>
+								   <td>-</td>
+								   <td>-</td>
+								   <td>거래완료</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+							   </tr>
+							   <tr>
+								   <td>49</td>
+								   <td>1231234678</td>
+								   <td>k@m.com(스즈땽)</td>
+								   <td class="color">k@m.com(한버로티)</td>
+								   <td class="a">뉴발 250mm미착용 새상품</td>
+								   <td>안전결제</td>
+								   <td>500,000</td>
+								   <td>-</td>
+								   <td>신용카드</td>
+								   <td>거래완료</td>
+								   <td>-</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+							   </tr>
+							   <tr>
+								   <td>48</td>
+								   <td>1231234678</td>
+								   <td class="color">k@m.com(한버로티)</td>
+								   <td>k@m.com(스즈땽)</td>
+								   <td class="a">재키 인형 팔아요</td>
+								   <td>안전결제</td>
+								   <td>500,000</td>
+								   <td>5,000</td>
+								   <td>신용카드</td>
+								   <td>거래완료</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+							   </tr>
+							   <tr>
+								   <td>47</td>
+								   <td>1231234678</td>
+								   <td class="color">k@m.com(한버로티)</td>
+								   <td>k@m.com(스즈땽)</td>
+								   <td class="a">나이키 후드 삼줄</td>
+								   <td>안전결제</td>
+								   <td>500,000</td>
+								   <td>5,000</td>
+								   <td>신용카드</td>
+								   <td>거래완료</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+								   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+							   </tr>
+						   </table>
+					   </li>
+					</ul>
+				   <div class="btn_wrap clear">
+					   <ul class="btn_left clear">
+						   <li><img src="img/back02.png"></li>
+						   <li><img src="img/back.png"></li>
+					   </ul>
+					   <ul class="btn clear">
+						   <li class="on">1</li>
+					   </ul>
+					   <ul class="btn_right clear">
+						   <li><img src="img/next.png"></li>
+						   <li><img src="img/next02.png"></li>
+					   </ul>
+				   </div>
+				</li>
+<!--			 거래내역 탭영역-->
+<!--			 스토어 정보/후기 탭영역-->
+				<li class="v03">
+					<ul class="v03_st clear">
+						<li class="on">스토어 정보</li>
+						<li>스토어 평가 / 후기</li>
+					</ul>
+					<ul class="v03_sb">
+<!--					스토어정보 영역-->
+						<li class="on v03_sb01">
+							<table class="tb02 v04">
+								<tr>
+									<th colspan="3">상품</th>
+									<th colspan="3">거래</th>
+									<th rowspan="2">즉시송금</th>
+								</tr>
+								<tr>
+									<th>총 상품</th>
+									<th>보유상품</th>
+									<th>판매완료</th>
+									<th>택배거래</th>
+									<th>직거래</th>
+									<th>안전거래</th>
+								</tr>
+								<tr>
+									<td>47건</td>
+									<td>32건</td>
+									<td>15건</td>
+									<td>5건</td>
+									<td>10건</td>
+									<td>3건</td>
+									<td>5건</td>
+								</tr>
+							</table>
+							<table class="tb03 v03">
+								<tr>
+									<th>스토어 랭킹</th>
+									<td>12위</td>
+									<th>고객평점</th>
+									<td>3.2</td>
+									<th>거래 만족 수</th>
+									<td>20</td>
+								</tr>
+								<tr>
+									<th>스토어 공유</th>
+									<td><a class="m_st" href="#">158</a></td>
+									<th>팔로워/팔로잉</th>
+									<td><a class="m_fl" href="#">125 / 62</a></td>
+									<th>일평균/월평균/<br>누적 방문 수</th>
+									<td>41 / 1,856 / 125,689</td>
+								</tr>
+								<tr>
+									<th rowspan="4">스토어 소개 이미지</th>
+									<td rowspan="4">
+										<a href="#">스토어소개이미지다.jpg</a>
+										<div class="imgbox">
+											image
+											<div class="hide_btn">
+												<ul>
+													<li>숨김</li>
+													<li>숨김해제</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<th>한 줄 공지사항</th>
+									<td width="25%"><input type="text" name="mb_txt" value="한 번에 2개 이상 거래시 택배비 무료!"></td>
+									<th>연락 가능 시간</th>
+									<td width="25%"><input type="text" name="mb_txt" value="평일 10시~15시, 주말 24시간 연락가능"></td>
+								</tr>
+								<tr>
+									<th rowspan="3">대표 카테고리</th>
+									<td colspan="3" rowspan="3">수입명품&#62;수입명품 전체<br>
+									패션의류&#62;여성의류<br>
+									오토바이/차량부품/용품&#62;블랙박스/네비게이션</td>
+								</tr>
+								<tr></tr>
+								<tr></tr>
+								<tr>
+									<th>스토어 소개 문구</th>
+									<td colspan="5" class="textarea_wp">
+										<textarea name="list02_txt" value=" " placeholder="">중고 명품 시계를 취급하고 있어요!</textarea>
+									</td>
+								</tr>
+							</table>
+						</li>
+<!--					스토어정보 영역-->
+<!--					스토어평가 후기 영역-->
+						<li class="v03_sb02">
+							<table class="tb02 v04">
+								<tr>
+									<th>총 평균점수</th>
+									<th>친절도 평균</th>
+									<th>응대속도 평균</th>
+									<th>상품일치 평균</th>
+									<th>거래만족 평균</th>
+									<th>거래만족 수<br>(거래만족 3.0이상)</th>
+								</tr>
+								<tr>
+									<td>3.5</td>
+									<td>3.0</td>
+									<td>5.0</td>
+									<td>3.0</td>
+									<td>3.0</td>
+									<td>3건</td>
+								</tr>
+							</table>
+							<table class="sc">
+								<tr>
+									<th>기간</th>
+									<td class="cd_img clear" width="23%">
+									   <input type="text" name="sc_txt" value="" class="sc_cd01">
+									   <input type="button" name="sc_btn" value="" class="datepicker n01">
+									   ~
+									   <input type="text" name="sc_txt" value="" class="sc_cd02">
+									   <input type="button" name="sc_btn" value="" class="datepicker n02">
+								   </td>
+									<th>삭제여부</th>
+									<td width="15%">
+										<select>
+											<option>전체</option>
+											<option>Y</option>
+											<option>N</option>
+										</select>
+									</td>
+									<th>작성내용</th>
+									<td>
+										<input type="text" name="sc_txt" value="">
+										<input type="button" name="sc_btn" value="검색">
+									</td>
+								</tr>
+							</table>
+						   <ul class="list_top clear">
+							   <li>전체 50건,</li>
+							   <li class="clear'">
+								   <ul class="list_nm">
+									   <li class="on">1</li>
+								   </ul>
+								   <p>/ 3 페이지</p>
+							   </li>
+							   <li><span>(2018-07-01 ~ 2018-09-05)</span></li>
+							   <li>
+								   <select>
+									   <option>20개씩</option>
+									   <option>40개씩</option>
+									   <option>60개씩</option>
+									   <option>80개씩</option>
+									   <option>100개씩</option>
+								   </select>
+							   </li>
+							   <li class="list_topbtn clear">
+								   <a href="#" class="btn02" style="width:90px;">숨김해제</a>
+								   <a href="#" class="btn03" style="width:90px;">숨김적용</a>
+							   </li>
+						   </ul>
+						   <ul class="list_view clear">
+							   <li class="on">
+								   <table class="list">
+									   <tr>
+										   <th>
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb all" value="">
+												 <span></span>
+											</label>
+										   </th>
+										   <th>NO.</th>
+										   <th>작성자</th>
+										   <th>평균점수</th>
+										   <th>친절도</th>
+										   <th>응대속도</th>
+										   <th>상품일치</th>
+										   <th>거래만족</th>
+										   <th>작성내용</th>
+										   <th>후기추천</th>
+										   <th>후기비추천</th>
+										   <th>삭제여부</th>
+										   <th>작성일</th>
+									   </tr>
+									   <tr>
+										   <td>
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb" value="">
+												 <span></span>
+											</label>
+										   </td>
+										   <td>50</td>
+										   <td class="a color">지드래곤(전혜윤)</td>
+										   <td>3.5</td>
+										   <td>3.0</td>
+										   <td>5.0</td>
+										   <td>3.0</td>
+										   <td>3.0</td>
+										   <td class="line">
+										   	구매평은 처음 써봐요. 만족감이 크기 때문에...! 집에 고양이가 두마리가 있어요. 원래 사용하던 화장<br>실도 컸으나 불편해보여서 샀는데 상품도 깨끗하고 편해보였어요! 좋은 상품 감사해요!
+										   </td>
+										   <td>10</td>
+										   <td>2</td>
+										   <td>N</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+									   </tr>
+								   </table>
+							   </li>
+							</ul>
+						   <div class="btn_wrap clear">
+							   <ul class="btn_left clear">
+								   <li><img src="img/back02.png"></li>
+								   <li><img src="img/back.png"></li>
+							   </ul>
+							   <ul class="btn clear">
+								   <li class="on">1</li>
+							   </ul>
+							   <ul class="btn_right clear">
+								   <li><img src="img/next.png"></li>
+								   <li><img src="img/next02.png"></li>
+							   </ul>
+						   </div>
+						</li>
+<!--					스토어평가 후기 영역-->
+					</ul>
+				</li>
+<!--			 스토어 정보/후기 탭영역-->
+<!--			 1:1문의 / 신고 탭영역-->
+				<li class="v04">
+					<ul class="v04_st clear">
+						<li class="on">1:1 문의</li>
+						<li>신고</li>
+					</ul>
+					<ul class="v04_sb">
+<!--					1:1문의 영역-->
+						<li class="v04_sb01 on">
+							<table class="tb02">
+								<tr>
+									<th rowspan="2">전체문의</th>
+									<th colspan="10">앱</th>
+									<th colspan="7">카페</th>
+								</tr>
+								<tr>
+									<th>회원</th>
+									<th>스토어</th>
+									<th>서비스</th>
+									<th>주문/결제</th>
+									<th>취소/반품</th>
+									<th>배송</th>
+									<th>포인트</th>
+									<th>기타</th>
+									<th>비밀의공구</th>
+									<th>이벤트/광고</th>
+									<th>회원</th>
+									<th>등급관련</th>
+									<th>이용제한</th>
+									<th>운영정책위반</th>
+									<th>사기신고</th>
+									<th>이벤트/광고</th>
+									<th>기타</th>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>3</td>
+									<td>4</td>
+									<td>-</td>
+									<td>-</td>
+									<td>-</td>
+									<td>2</td>
+									<td>2</td>
+									<td>1</td>
+									<td>-</td>
+									<td>5</td>
+									<td>-</td>
+									<td>-</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+							</table>
+							<table class="sc">
+								<tr>
+									<th>문의일</th>
+									<td class="cd_img clear" width="20%">
+									   <input type="text" name="sc_txt" value="" class="sc_cd01">
+									   <input type="button" name="sc_btn" value="" class="datepicker n01">
+									   ~
+									   <input type="text" name="sc_txt" value="" class="sc_cd02">
+									   <input type="button" name="sc_btn" value="" class="datepicker n02">
+								   </td>
+									<th>문의구분</th>
+									<td>
+										<select id="stxt">
+											<option>전체</option>
+											<option>앱</option>
+											<option>카페</option>
+										</select>
+									</td>
+									<th>문의유형</th>
+									<td>
+										<select class="on">
+											<option>전체</option>
+										</select>
+										<select>
+											<option>전체</option>
+											<option>회원</option>
+											<option>스토어</option>
+											<option>서비스</option>
+											<option>주문/결제</option>
+											<option>취소/반품</option>
+											<option>배송</option>
+											<option>포인트</option>
+											<option>기타</option>
+											<option>비밀의공구</option>
+											<option>이벤트/광고</option>
+										</select>
+										<select>
+											<option>전체</option>
+											<option>회원</option>
+											<option>등급관련</option>
+											<option>이용제한</option>
+											<option>운영정책위반사기신고</option>
+											<option>이벤트/광고</option>
+											<option>기타</option>
+										</select>
+									</td>
+									<th>첨부이미지</th>
+									<td>
+										<select>
+											<option>전체</option>
+											<option>Y</option>
+											<option>N</option>
+										</select>
+									</td>
+									<th>처리상태</th>
+									<td>
+										<select>
+											<option>전체</option>
+											<option>답변하기</option>
+											<option>답변완료</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>제목+내용</th>
+									<td>
+										<input type="text" name="sc_txt" value="">
+									</td>
+									<th>처리자</th>
+									<td colspan="7">
+										<input type="text" name="sc_txt" value="">
+										<input type="button" name="sc_btn" value="검색">
+									</td>
+								</tr>
+							</table>
+						   <ul class="list_top clear">
+							   <li>전체 50건,</li>
+							   <li class="clear'">
+								   <ul class="list_nm">
+									   <li class="on">1</li>
+								   </ul>
+								   <p>/ 3 페이지</p>
+							   </li>
+							   <li><span>(2018-07-01 ~ 2018-09-05)</span></li>
+							   <li>
+								   <select>
+									   <option>20개씩</option>
+									   <option>40개씩</option>
+									   <option>60개씩</option>
+									   <option>80개씩</option>
+									   <option>100개씩</option>
+								   </select>
+							   </li>
+							   <li class="list_topbtn clear" style="margin-top:0px;">
+								   <select style="width:110px;">
+									   <option>문의유형 변경</option>
+								   </select>
+								   <a href="#" class="btn01 ap_pop" style="width:60px;">적용</a>
+								   <a href="#" class="btn01" style="width:90px;">선택답변</a>
+							   </li>
+						   </ul>
+						   <ul class="list_view clear">
+							   <li class="on">
+								   <table class="list">
+									   <tr>
+										   <th>
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb all" value="">
+												 <span></span>
+											</label>
+										   </th>
+										   <th>NO.</th>
+										   <th>문의구분</th>
+										   <th>문의유형</th>
+										   <th>제목</th>
+										   <th>첨부이미지</th>
+										   <th>문의일</th>
+										   <th>처리상태</th>
+										   <th>처리자</th>
+									   </tr>
+									   <tr>
+										   <td rowspan="2">
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb" value="">
+												 <span></span>
+											</label>
+										   </td>
+										   <td>11200121</td>
+										   <td>앱</td>
+										   <td>주문/결제</td>
+										   <td>오늘 팔면 돈이 바로 들어오나요?</td>
+										   <td>N</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a">답변완료</td>
+										   <td>한석문(서비스기획팀)</td>
+									   </tr>
+									   <tr>
+										   <td colspan="8" class="list_m">
+											<div>
+											   상품고유번호 : <a href="#">JN17122000001</a> / 거래번호 : <a href="#">1445435466</a> / 운송장번호 : <a href="#">910481290415</a><br>
+											   문의내용을 2줄까지 미리 표기합니다.
+										    </div>
+										    <img src="img/pop_next.png">
+										   </td>
+									   </tr>
+									   <tr>
+										   <td rowspan="2">
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb" value="">
+												 <span></span>
+											</label>
+										   </td>
+										   <td>11200121</td>
+										   <td>카페</td>
+										   <td>스토어</td>
+										   <td>오늘 팔면 돈이 바로 들어오나요?</td>
+										   <td class="a color">Y</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a color">답변하기</td>
+										   <td>-</td>
+									   </tr>
+									   <tr>
+										   <td colspan="8" class="list_m">
+											<div>
+											   상품고유번호 : <a href="#">JN17122000001</a> / 거래번호 : <a href="#">1445435466</a> / 운송장번호 : <a href="#">910481290415</a><br>
+											   문의내용을 2줄까지 미리 표기합니다.
+										    </div>
+										    <img src="img/pop_next.png">
+										   </td>
+									   </tr>
+								   </table>
+							   </li>
+							</ul>
+						   <div class="btn_wrap clear">
+							   <ul class="btn_left clear">
+								   <li><img src="img/back02.png"></li>
+								   <li><img src="img/back.png"></li>
+							   </ul>
+							   <ul class="btn clear">
+								   <li class="on">1</li>
+							   </ul>
+							   <ul class="btn_right clear">
+								   <li><img src="img/next.png"></li>
+								   <li><img src="img/next02.png"></li>
+							   </ul>
+						   </div>
+						</li>
+<!--					1:1문의 영역-->
+<!--					신고 영역-->
+						<li class="v04_sb02">
+							<table class="tb02">
+								<tr>
+									<th>받은신고</th>
+									<th>보낸신고</th>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>12</td>
+								</tr>
+							</table>
+							<table class="sc">
+								<tr>
+									<th>신고일</th>
+									<td class="cd_img clear" width="20%">
+									   <input type="text" name="sc_txt" value="" class="sc_cd01">
+									   <input type="button" name="sc_btn" value="" class="datepicker n01">
+									   ~
+									   <input type="text" name="sc_txt" value="" class="sc_cd02">
+									   <input type="button" name="sc_btn" value="" class="datepicker n02">
+								   </td>
+									<th>신고유형</th>
+									<td>
+									   <select id="qu03_sl">
+										   <option>전체</option>
+										   <option>비매너</option>
+										   <option>스팸성광고</option>
+										   <option>불법</option>
+										   <option>사기</option>
+										   <option>정보부정확</option>
+										   <option>배너 AD 광고</option>
+										   <option>기타사유</option>
+									   </select>
+									</td>
+									<th style="width:8%;">신고상세유형</th>
+								   <td class="qu03">
+									   <select class="on">
+										   <option>전체</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>일방적인 거래파기,연락두절</option>
+										   <option>악의적 비방 및 욕설,명예훼손</option>
+										   <option>성희롱</option>
+										   <option>거래 불이행 및 분쟁신고</option>
+										   <option>기타 비매너</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>카페,블로그 홍보</option>
+										   <option>타사이트 링크 유도</option>
+										   <option>도박,대부업과 같은 광고</option>
+										   <option>성인광고</option>
+										   <option>기타스팸성 광고</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>이미테이션 상품</option>
+										   <option>술,담배,금연보조제</option>
+										   <option>미성년자 이용 불가 제품</option>
+										   <option>몰래카메라,스파이캠</option>
+										   <option>모든 의약품 및 처방이 필요한 한약</option>
+										   <option>개인정보 및 계정거래</option>
+										   <option>내사진 또는 저작권 이미지 도용</option>
+										   <option>저작권법 위반 복사본</option>
+										   <option>기타 불법거래</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>거래 전 사기 의심</option>
+										   <option>거래 후 사기 피해신고</option>
+										   <option>사기피해 사이트 등록 및 조회자</option>
+										   <option>기타</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>상품 설명 부족</option>
+										   <option>중복 게시글</option>
+										   <option>카테고리 잘못 지정</option>
+										   <option>판매가치가 없는 상품</option>
+										   <option>판매 내용과 다른 내용으로 예약중</option>
+										   <option>기타 사기의심</option>
+									   </select>
+									   <select>
+										   <option>전체</option>
+										   <option>광고 배너 이미지 부적합</option>
+										   <option>광고 배너 스토어명 부적합</option>
+										   <option>광고 배너 소개글 부적합</option>
+									   </select>
+									   <select>
+										   <option>-</option>
+									   </select>
+								   </td>
+									<th>처리상태</th>
+									<td>
+										<select style="width:90px;">
+											<option>전체</option>
+											<option>관리자처리</option>
+											<option>관리자숨김</option>
+											<option>자동숨김</option>
+										</select>
+									</td>
+									<th>확인상태</th>
+									<td>
+										<select style="width:60px; background-position: 40px;">
+											<option>전체</option>
+											<option>Y</option>
+											<option>N</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>신고내용</th>
+									<td>
+										<input type="text" name="sc_txt" value="">
+									</td>
+									<th>신고자</th>
+									<td>
+										<input type="text" name="sc_txt" value="" style="width:100px;">
+									</td>
+									<th>처리자</th>
+									<td colspan="5">
+										<input type="text" name="sc_txt" value="">
+										<input type="button" name="sc_btn" value="검색">
+									</td>
+								</tr>
+							</table>
+						   <ul class="list_top clear">
+							   <li>전체 50건,</li>
+							   <li class="clear'">
+								   <ul class="list_nm">
+									   <li class="on">1</li>
+								   </ul>
+								   <p>/ 3 페이지</p>
+							   </li>
+							   <li><span>(2018-07-01 ~ 2018-09-05)</span></li>
+							   <li>
+								   <select>
+									   <option>20개씩</option>
+									   <option>40개씩</option>
+									   <option>60개씩</option>
+									   <option>80개씩</option>
+									   <option>100개씩</option>
+								   </select>
+							   </li>
+							   <li class="list_topbtn clear" style="margin-top:0px;">
+								   <select id="qu04_sl">
+									   <option>전체</option>
+									   <option>비매너</option>
+									   <option>스팸성광고</option>
+									   <option>불법</option>
+									   <option>사기</option>
+									   <option>정보부정확</option>
+									   <option>배너 AD 광고</option>
+									   <option>기타사유</option>
+								   </select>
+								   <span class="qu04 liheight">
+									   <select class="on" style="height: 30px;">
+										   <option>전체</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>일방적인 거래파기,연락두절</option>
+										   <option>악의적 비방 및 욕설,명예훼손</option>
+										   <option>성희롱</option>
+										   <option>거래 불이행 및 분쟁신고</option>
+										   <option>기타 비매너</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>카페,블로그 홍보</option>
+										   <option>타사이트 링크 유도</option>
+										   <option>도박,대부업과 같은 광고</option>
+										   <option>성인광고</option>
+										   <option>기타스팸성 광고</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>이미테이션 상품</option>
+										   <option>술,담배,금연보조제</option>
+										   <option>미성년자 이용 불가 제품</option>
+										   <option>몰래카메라,스파이캠</option>
+										   <option>모든 의약품 및 처방이 필요한 한약</option>
+										   <option>개인정보 및 계정거래</option>
+										   <option>내사진 또는 저작권 이미지 도용</option>
+										   <option>저작권법 위반 복사본</option>
+										   <option>기타 불법거래</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>거래 전 사기 의심</option>
+										   <option>거래 후 사기 피해신고</option>
+										   <option>사기피해 사이트 등록 및 조회자</option>
+										   <option>기타</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>상품 설명 부족</option>
+										   <option>중복 게시글</option>
+										   <option>카테고리 잘못 지정</option>
+										   <option>판매가치가 없는 상품</option>
+										   <option>판매 내용과 다른 내용으로 예약중</option>
+										   <option>기타 사기의심</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>전체</option>
+										   <option>광고 배너 이미지 부적합</option>
+										   <option>광고 배너 스토어명 부적합</option>
+										   <option>광고 배너 소개글 부적합</option>
+									   </select>
+									   <select style="height: 30px;">
+										   <option>-</option>
+									   </select>
+								   </span>
+								   <a href="#" class="btn01 ap_pop" style="width:60px;">적용</a>
+								   <a href="#" class="btn01" style="width:80px;">선택처리</a>
+								   <a href="#" class="btn01" style="width:120px;">자동화 처리 관리</a>
+							   </li>
+						   </ul>
+						   <ul class="list_view clear">
+							   <li class="on">
+								   <table class="list">
+									   <tr>
+										   <th rowspan="2">
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb all" value="">
+												 <span></span>
+											</label>
+										   </th>
+										   <th rowspan="2">NO.</th>
+										   <th rowspan="2">신고유형</th>
+										   <th rowspan="2">신고상세유형</th>
+										   <th colspan="2">신고대상</th>
+										   <th rowspan="2">신고내용</th>
+										   <th rowspan="2">첨부이미지</th>
+										   <th rowspan="2">신고자</th>
+										   <th rowspan="2">신고일</th>
+										   <th rowspan="2">처리상태</th>
+										   <th rowspan="2">신고처리일</th>
+										   <th rowspan="2">처리관리자</th>
+									   </tr>
+									   <tr>
+										   <th style="border-left:1px solid #ededed">회원</th>
+										   <th>상품</th>
+									   </tr>
+									   <tr>
+										   <td>
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb" value="">
+												 <span></span>
+											</label>
+										   </td>
+										   <td>11200121</td>
+										   <td>비매너</td>
+										   <td>성희롱</td>
+										   <td class="a color">a@bbb.com</td>
+										   <td>-</td>
+										   <td class="line">신고내용 두줄까지 표기<br>신고내용 두줄까지 표기</td>
+										   <td class="a color">Y</td>
+										   <td class="a v03">AA@c.com</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a color">관리자처리</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a color">김보배(서비스기획팀)</td>
+									   </tr>
+									   <tr>
+										   <td>
+											<label class="cb li">
+												 <input type="checkbox" class="sc_cb" value="">
+												 <span></span>
+											</label>
+										   </td>
+										   <td>11200120</td>
+										   <td>스팸성광고</td>
+										   <td>카페, 블로그 홍보</td>
+										   <td class="a v03">AA@bbb.com</td>
+										   <td class="a color">아이폰 6s최상급</td>
+										   <td>-</td>
+										   <td>N</td>
+										   <td class="a color">a@c.com</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a color">자동숨김</td>
+										   <td class="line">YYYY-MM-DD<br>HH:MM:SS</td>
+										   <td class="a color02">확인전</td>
+									   </tr>
+								   </table>
+							   </li>
+							</ul>
+						   <div class="btn_wrap clear">
+							   <ul class="btn_left clear">
+								   <li><img src="img/back02.png"></li>
+								   <li><img src="img/back.png"></li>
+							   </ul>
+							   <ul class="btn clear">
+								   <li class="on">1</li>
+							   </ul>
+							   <ul class="btn_right clear">
+								   <li><img src="img/next.png"></li>
+								   <li><img src="img/next02.png"></li>
+							   </ul>
+						   </div>
+						</li>
+<!--					신고 영역-->
+					</ul>
+				</li>
+<!--			 1:1문의 / 신고 탭영역-->
+<!--			 광고 / 수익 영역-->
+				<li class="v05">
+					<ul class="v05_st clear">
+						<li class="on">광고</li>
+						<li>수익</li>
+					</ul>
+					<ul class="v05_sb"></ul>
+				</li>
+<!--			 광고 / 수익 영역-->
+			</ul>
+		</div>
+<!--	탭 영역-->
+		<ul class="pop_btn">
+			<li><a href="#" onclick="self.close()">취소</a></li>
+			<li><a href="#" onclick="self.close()">수정/적용</a></li>
+		</ul>
+	</div>
+</body>
+</html>

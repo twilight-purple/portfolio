@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>operation06_popup03</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#pw{width: 700px; height: 390px;}
+	</style>
+	<script type="application/javascript" src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/int.js"></script>
+</head>
+<body>
+	<div id="pw" class="op06_02">
+		<div class="top">회원/상품 처리</div>
+		<div class="pw_div">
+			<table class="tb01">
+				<tr>
+					<th>상품처리</th>
+					<td>
+					   <ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1" checked="">
+									<span></span>노출
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd1">
+									<span></span>숨김
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>회원처리</th>
+					<td>
+						<ul class="clear">
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2" checked="">
+									<span></span>일반
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2">
+									<span></span>블랙
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2">
+									<span></span>정지
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2">
+									<span></span>경고
+								</label>
+							</li>
+							<li>
+								<label class="rdb">
+									<input type="radio" name="rd2">
+									<span></span>관심
+								</label>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<h5>* 경고 사유를 입력해주세요. 입력하신 사유는 회원에게 안내됩니다.</h5>
+			<textarea name="list02_txt" value=" " placeholder=""></textarea>
+		</div>
+        <ul class="pop_btn clear">
+            <li><a href="#" onclick="self.close()">취소</a></li>
+            <li><a href="#" onclick="self.close()">처리완료</a></li>
+        </ul>
+	</div>
+</body>
+</html>

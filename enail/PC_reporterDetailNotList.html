@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-내일신문</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/select_box.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select_box.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gnb02.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb-menu > li").eq(2).addClass("on");
+        });
+    </script>
+</head>
+<body>
+
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+
+    <section class="mgt-50 wid-1115">
+       
+        <div class="profile-wrap bgc05 clear">
+            <div class="profile-left">
+                <p class="txtc03 font-20 mgb-5">외교·통일부</p>
+                <p class="font-24 mgb-20"><span class="font-40">홍길동</span> 기자</p>
+                <ul class="profile-btn clear mgb-20">
+                    <li class="mgr-5 fl">팔로우</li>
+                    <li class="pf">프로필</li>
+                </ul>
+                <p class="font-16 mgb-60 line-height25 profile-txt">
+                    2000년 내일신문 입사 후 정치부 부장, 논설위위원 등을 거쳐 현재편집국장으로 재직 중이다. 2017년 12월부터 논설위원으로 재직 중이다.
+                </p>
+                <ul class="profile-sns clear">
+                    <li class="tw">
+                        <a href="#"><img src="img/icon/profile-sns-twitter.png"></a>
+                        <span><img src="img/icon/profile-sns-twitter-hover.png"></span>
+                    </li>
+                    <li class="fc">
+                        <a href="#"><img src="img/icon/profile-sns-facebook.png"></a>
+                        <span><img src="img/icon/profile-sns-facebook-hover.png"></span>
+                    </li>
+                    <li class="is">
+                        <a href="#"><img src="img/icon/profile-sns-instar.png"></a>
+                        <span><img src="img/icon/profile-sns-instar-hover.png"></span>
+                    </li>
+                    <li class="kk">
+                        <a href="#"><img src="img/icon/profile-sns-kakao.png"></a>
+                        <span><img src="img/icon/profile-sns-kakao-hover.png"></span>
+                    </li>
+                    <li class="bl">
+                        <a href="#"><img src="img/icon/profile-sns-blog.png"></a>
+                        <span><img src="img/icon/profile-sns-blog-hover.png"></span>
+                    </li>
+                </ul>
+                <div class="profile-view bgc02">
+                    <div class="profile-close"></div>
+                    <p class="font-20 mgb-5">외교·통일부</p>
+                    <p class="font-24 mgb-70"><span class="font-40">홍길동</span> 기자</p>
+                    <span></span>
+                    <div class="editor-history-scroll">
+                        <ul class="editor-history">
+                            <li>
+                                <ul class="clear">
+                                    <li>2014.01 ~ 현재</li>
+                                    <li>내일신문 편집국 외교·통일부 팀장</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="clear">
+                                    <li>2010.03 ~ 2013.12</li>
+                                    <li>내일신문 편집국 외교·통일부 팀장</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="clear">
+                                    <li>2006.06 ~ 2007.05</li>
+                                    <li>내일신문 편집국 외교·통일부 팀장</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="clear">
+                                    <li>2003.03 ~ 2001.04</li>
+                                    <li>내일신문 편집국 정치부 기자내일신문 편집국 정치부 기자</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="clear">
+                                    <li>2014.01 ~ 현재</li>
+                                    <li>내일신문 편집국 외교·통일부 팀장</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="profile-right mgr-40" src="img/people/profile-editor01.jpg">
+        </div>
+        
+        <div class="gnb-change relative pdt-50 mgb-100">
+           
+            <div class="news-data-wrap mgb-130">
+                <div class="swiper-container data">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on">2018</div>
+                        <div class="swiper-slide">2017</div>
+                        <div class="swiper-slide">2016</div>
+                        <div class="swiper-slide txtc05">2015</div>
+                        <div class="swiper-slide txtc05">2014</div>
+                        <div class="swiper-slide txtc05">2013</div>
+                        <div class="swiper-slide txtc05">2012</div>
+                        <div class="swiper-slide txtc05">2011</div>
+                        <div class="swiper-slide txtc05">2010</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next data-next"><span></span></div>
+                <div class="swiper-button-prev data-prev"><span></span></div>
+            </div>
+            
+<!--            <?php include_once G5_PLUGIN_PATH.'select_box.php';?>-->
+            <div class="select-box news-data-select">
+                <select>
+                    <option>전체</option>
+                    <option>1월</option>
+                    <option>2월</option>
+                    <option>3월</option>
+                    <option>4월</option>
+                    <option>5월</option>
+                    <option>6월</option>
+                    <option>7월</option>
+                    <option>8월</option>
+                    <option>9월</option>
+                    <option>10월</option>
+                    <option>11월</option>
+                    <option>12월</option>
+                </select>
+            </div>
+
+            <div class="news-data-cont">
+                <div class="empty">
+                    <p>등록된 글이 없습니다.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>

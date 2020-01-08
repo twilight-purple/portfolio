@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-내일신문</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/select_box.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select_box.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/gnb01.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb02_txt").text("마이페이지");
+        });
+    </script>
+</head>
+<body>
+
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+    <section class="mgb-100">
+       
+        <h2 class="mypage-h2">
+            안녕하세요 회원님,<br>
+            <span>e내일신문 마이페이지</span><b>에 오신것을 환영합니다.</b>
+        </h2>
+        
+        <div class="mypage-line"></div>
+        
+        <ul class="mypage-cont clear">
+            <li>
+                <a href="#">
+                    <div></div>
+                    <div></div>
+                    <h3>회원정보 수정<span></span></h3>
+                    <p>
+                        내일신문 홈페이지와 관련된 회원정보를 수정하시길<br>
+                        원하시는 고객님께서는 이곳을 클릭 해주시기 바랍니다.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div></div>
+                    <div></div>
+                    <h3>내가 팔로우한 기자<span></span></h3>
+                    <p>
+                        e내일신문 홈페이지에서 고객님께서 팔로우한 기자 내역을<br>
+                        조회하고자 하실 경우 이곳을 클릭 해주시기 바랍니다.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div></div>
+                    <div></div>
+                    <h3>내가 작성한 댓글<span></span></h3>
+                    <p>
+                        e내일신문 홈페이지에서 고객님께서 작성한 댓글을<br>
+                        조회하고자 하실 경우 이곳을 클릭 해주시기 바랍니다.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div></div>
+                    <div></div>
+                    <h3>내가 스크랩한 리포트<span></span></h3>
+                    <p>
+                        e내일신문 홈페이지에서 고객님께서 스크랩한 리포트<br>
+                        조회하고자 하실 경우 이곳을 클릭 해주시기 바랍니다.
+                    </p>
+                </a>
+            </li>
+        </ul>
+        
+    </section>
+    <?php include "PC_Layerpop01.php"; ?>
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>

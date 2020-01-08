@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>e내일신문</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/int.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb-title").text("마이페이지");
+        });
+    </script> 
+</head>
+<body>
+<!--   gnb/snb연결-->
+  	<?php include "gnb.php"; ?>
+<!--   gnb/snb연결-->
+
+    <section class="wid-100">
+       
+        <div class="m-mflist-title mgb-20">
+            <h2>회원님께서<br><span>팔로우한 기자</span>를 확인해보세요!</h2>
+            <div><img src="img/icon/followlist-heart.jpg">100명</div>
+        </div>
+        
+        <ul class="m-mypage-tabbtn clear">
+            <li class="on"><img src="img/icon/searchpage-tabbtn.jpg">기자리포트</li>
+            <li><img src="img/icon/searchpage-tabbtn.jpg">스페셜리포트</li>
+        </ul>
+        
+        <ul class="m-mypage-tab">
+            <li class="on">
+                <ul class="m-fllist01">
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people02.jpg">
+                            <h5><b>정재철</b> 기자</h5>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <h5><b>김기수</b> 기자</h5>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people03.jpg">
+                            <h5><b>김영희</b> 기자</h5>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people02.jpg">
+                            <h5><b>정재철</b> 기자</h5>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people01.jpg">
+                            <h5><b>김기수</b> 기자</h5>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#">
+                            <img src="img/people/main-people03.jpg">
+                            <h5><b>김영희</b> 기자</h5>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <ul class="m-fllist02">
+                    <li>
+                        <a href="#">
+                            <img src="img/special/special-main-list01.jpg">
+                            <div class="clear">
+                                <img src="img/people/main-people02.jpg">
+                                <div>
+                                    <h3>글로벌 비하인드 스토리</h3>
+                                    <h4>정재철 기자 <span>外 1명</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/special/special-main-list02.jpg">
+                            <div class="clear">
+                                <img src="img/people/main-people02.jpg">
+                                <div>
+                                    <h3>위드차이나</h3>
+                                    <h4>김기수 기자</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/special/special-main-list01.jpg">
+                            <div class="clear">
+                                <img src="img/people/main-people02.jpg">
+                                <div>
+                                    <h3>여론조사를 통한 나라 경제 읽어보기여론조사를 통한 우리나라</h3>
+                                    <h4>한면택 특파원</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/special/special-main-list02.jpg">
+                            <div class="clear">
+                                <img src="img/people/main-people02.jpg">
+                                <div>
+                                    <h3>글로벌 비하인드 스토리</h3>
+                                    <h4>정재철 기자 <span>外 1명</span></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/special/special-main-list01.jpg">
+                            <div class="clear">
+                                <img src="img/people/main-people02.jpg">
+                                <div>
+                                    <h3>위드차이나</h3>
+                                    <h4>김기수 기자</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="moreview-wrap">
+           <div class="moreview on">
+                <p>더보기 <span class="color"><b>1</b> / 10</span><img src="img/icon/more-icon.jpg"></p>
+                <div class="loding">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<!--    footer연결-->
+    <?php include "footer.php"; ?>
+<!--    footer연결-->
+</body>
+</html>
